@@ -1,0 +1,31 @@
+=== 2026-02-27 Maintenance Run ===
+SCAN:
+  - JSON-LD validation: All blocks valid across all 6 HTML files (no errors)
+  - Nav consistency: Fixed 404.html — added missing "About" link to both desktop (.nav-links) and mobile (.mobile-menu) nav
+  - Broken internal references: None found (relative paths all valid; anchors resolve correctly)
+  - Listing expiry: No listings expired; no changes to active status
+  - Sitemap freshness: All pages already at 2026-02-27; no updates needed
+  - Stats accuracy: Updated index.html hero stats — Active Listings: 22→27, Partner Organizations: 18→26
+  - Meta description: Updated listings.html description from "22+" to "27+"
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+  - "Free Code Academy + Paid Tech Internship" — Bay Valley Tech (id=26)
+  - "2026 Student Internship Program" — Turlock Irrigation District (id=27)
+TOTAL ACTIVE LISTINGS: 27
+==============================
+=== 2026-03-03 Maintenance Run ===
+SCAN:
+  - JSON-LD validation: All blocks valid across all 6 HTML files (no errors)
+  - Nav consistency: All 6 HTML files have correct desktop and mobile nav links (OK)
+  - Broken internal references: None found (query-param links are JS-handled; all file refs resolve)
+  - Listing expiry: No listings past 7-day grace period; no active status changes needed
+  - Sitemap freshness: Updated index.html lastmod to 2026-03-03 (stats edited today)
+  - Stats accuracy: Updated index.html hero stats — Active Listings: 27→34, Partner Organizations: 26→32
+  Note: IDs 28–31 were already added in an earlier same-day run (CA State Senate, Amazon, Gallo IT, Harbor Foods)
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+  - "Summer Internship Program" — Hilmar Cheese Company (id=32); Hilmar CA, paid 10-wk summer, college STEM students
+  - "Valley Legislative Internship Program" — The Maddy Institute (id=33); SJ/Stanislaus/Merced counties, $2,500 stipend, college students at CSU Stan/UC Merced/Fresno State
+  - "Inclusive Interaction Lab High School Internship" — UC Merced (id=34); virtual, 12-wk summer, unpaid, high school students in Central Valley
+TOTAL ACTIVE LISTINGS: 34
+==============================

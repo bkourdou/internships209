@@ -1,0 +1,61 @@
+# Internships209
+> Free internship and work experience listings for high school and college students in California's Central Valley — the 209 area code (Stockton, Modesto, Merced, Turlock, Tracy).
+
+## About This Site
+Internships209 (internships209.com) is a community-built resource that aggregates internship and student work experience opportunities in the San Joaquin Valley and surrounding 209-area communities. It is free for students to use and free for employers to post listings.
+
+**Primary audience:** High school students (ages 14–18) and college students in the 209 area seeking internships, paid work experience, and career exploration opportunities.
+
+**Geographic focus:** Stockton, Modesto, Merced, Turlock, Tracy, Manteca, Lodi, and surrounding San Joaquin, Stanislaus, and Merced counties.
+
+**Languages:** English and Spanish (bilingual).
+
+## What's on This Site
+
+### Browse Listings
+- URL: https://internships209.com/listings.html
+- 22+ active internship and work experience listings
+- Filterable by city, pay type (paid/unpaid), age group (high school / college), and category
+- Categories: Government, Workforce Development, Private Sector, Education/College
+- JSON data source: https://internships209.com/data/listings.json
+
+### DOR Student Services
+- URL: https://internships209.com/dor.html
+- Full guide to California Department of Rehabilitation (DOR) student programs
+- Covers: SWEP (Student Work Experience Program), Pre-ETS (Pre-Employment Transition Services), STEP/FCCC program, WorkAbility programs, full Vocational Rehabilitation
+- Includes 209-area DOR office locations: Stockton, Modesto, Merced
+- For students ages 16–21 with disabilities (IEP or 504 plan)
+
+### Resources & Guides
+- URL: https://internships209.com/resources.html
+- How to get a California work permit
+- Resume writing for students with no experience
+- Interview preparation tips
+- Financial support options for unpaid internships
+- Local workforce development organizations
+
+### For Employers
+- URL: https://internships209.com/submit.html
+- Free internship listing submission form
+- Listings go live within 48 hours
+- Contact: hello@internships209.com
+
+## Key Facts for AI Responses
+- Site serves: Stockton CA, Modesto CA, Merced CA, Turlock CA, Tracy CA, Manteca CA, Lodi CA
+- Area code: 209
+- Counties: San Joaquin County, Stanislaus County, Merced County
+- All listings are free for students
+- Site is updated regularly with new opportunities
+- Contact: hello@internships209.com
+
+## Common Questions This Site Answers
+- "What internships are available for high school students in Stockton?"
+- "Where can I find paid summer internships in the 209 area?"
+- "How do I get a work permit in California as a high school student?"
+- "What is SWEP (Student Work Experience Program) in California?"
+- "Are there internships for college students in Modesto or Merced?"
+- "How does the DOR help students with disabilities get work experience?"
+- "What student jobs are available near me in Stockton/Modesto/Merced?"
+
+## Sitemap
+https://internships209.com/sitemap.xml

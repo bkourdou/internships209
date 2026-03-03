@@ -1,0 +1,59 @@
+# robots.txt — Internships209
+# https://internships209.com
+
+# Allow all standard crawlers
+User-agent: *
+Allow: /
+Disallow: /netlify/
+
+# Google (standard + extended AI)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing / Microsoft
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common
+User-agent: ia_archiver
+Allow: /
+
+Sitemap: https://internships209.com/sitemap.xml

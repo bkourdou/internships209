@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Internships209 — Built for the 209, By Someone Who Gets It</title>
+  <meta name="description" content="Internships209 was built by Baris Kourdou, a Turlock-based Student Services Coordinator at the California DOR who has spent nearly a decade connecting 209-area youth to education and work experience." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://internships209.com/about.html" />
+  <meta property="og:title"       content="About Internships209 — Built for the 209" />
+  <meta property="og:description" content="Meet the person behind Internships209 — a 209-area educator and DOR student services professional who built this site because he lives the gap every day." />
+  <meta property="og:image"       content="https://internships209.com/og-image.svg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="theme-color"        content="#1A56A4" />
+  <link rel="canonical" href="https://internships209.com/about.html" />
+  <link rel="alternate" hreflang="en" href="https://internships209.com/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://internships209.com/about.html" />
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://internships209.com/" },
+        { "@type": "ListItem", "position": 2, "name": "About", "item": "https://internships209.com/about.html" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Internships209",
+      "url": "https://internships209.com/about.html",
+      "description": "Internships209 was built by Baris Kourdou, a Student Services Coordinator at the California Department of Rehabilitation based in Turlock, CA.",
+      "author": {
+        "@type": "Person",
+        "name": "Baris Kourdou",
+        "jobTitle": "Student Services Coordinator",
+        "worksFor": {
+          "@type": "GovernmentOrganization",
+          "name": "California Department of Rehabilitation"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Turlock",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "email": "hello@internships209.com"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".about-headline", ".about-intro"]
+      }
+    }
+  ]
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 100%);
+      color: white;
+      padding: 4rem 0 3rem;
+    }
+    .about-headline {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .about-intro {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.88);
+      max-width: 640px;
+    }
+    .about-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 1.25rem;
+    }
+    .story-section {
+      background: var(--white);
+      padding: 4rem 0;
+    }
+    .story-block {
+      max-width: 720px;
+    }
+    .story-block h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 1rem;
+    }
+    .story-block p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--gray-600);
+      margin-bottom: 1.25rem;
+    }
+    .story-block p:last-child {
+      margin-bottom: 0;
+    }
+    .credential-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 2.5rem 0;
+    }
+    .credential-card {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.35rem;
+    }
+    .credential-card .cred-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+    .credential-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.3rem;
+    }
+    .credential-card p {
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .mission-section {
+      background: var(--blue-50);
+      border-top: 1px solid var(--blue-100);
+      border-bottom: 1px solid var(--blue-100);
+      padding: 3.5rem 0;
+    }
+    .mission-card {
+      background: white;
+      border: 1px solid var(--blue-100);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .mission-card .mission-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .mission-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+    .mission-card p {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .contact-section {
+      background: var(--white);
+      padding: 3.5rem 0;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0.45rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      width: 2px;
+      background: var(--blue-100);
+    }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 1.75rem 1.25rem;
+    }
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -1.55rem;
+      top: 0.35rem;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      background: var(--blue-700);
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px var(--blue-200);
+    }
+    .timeline-dot.dot-current {
+      background: var(--blue-700);
+      box-shadow: 0 0 0 3px rgba(26,86,164,0.2);
+    }
+    .timeline-year {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--blue-700);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.2rem;
+    }
+    .timeline-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.15rem;
+    }
+    .timeline-org {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+    }
+    @media (max-width: 640px) {
+      .about-hero { padding: 2.5rem 0 2rem; }
+      .story-section, .contact-section { padding: 2.5rem 0; }
+      .mission-section { padding: 2.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Site navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-badge">209</span>
+          <span style="font-weight:800; color:#0F172A;">Internships</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+          <a href="listings.html" data-en="Browse Listings" data-es="Ver Oportunidades">Browse Listings</a>
+          <a href="resources.html" data-en="Resources" data-es="Recursos">Resources</a>
+          <a href="dor.html" data-en="DOR Services" data-es="Servicios DOR">DOR Services</a>
+          <a href="submit.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
+          <a href="about.html" class="active" data-en="About" data-es="Sobre Nosotros">About</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <a href="listings.html" class="btn btn-primary btn-sm" data-en="Find an Internship" data-es="Buscar Pasantías">Find an Internship</a>
+        </div>
+        <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Browse Listings</a>
+      <a href="resources.html">Resources</a>
+      <a href="dor.html">DOR Services</a>
+      <a href="submit.html">For Employers</a>
+      <a href="about.html">About</a>
+      <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-eyebrow">
+        <svg width="8" height="8" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10"/></svg>
+        Turlock, CA · The 209
+      </div>
+      <h1 class="about-headline">Built for the 209.<br/>By someone who lives it every day.</h1>
+      <p class="about-intro">
+        My name is Baris Kourdou. I'm a Student Services Coordinator at the California Department of Rehabilitation, based in Turlock. I built Internships209 because I see the gap from the inside — and I decided to do something about it.
+      </p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+
+        <!-- Left: Story -->
+        <div class="story-block">
+          <h2>Why I Built This</h2>
+          <p>
+            In my day job at the California Department of Rehabilitation, I work directly with young people — ages 16 to 22 — helping them find paid work experience and build real career skills. I connect them with employers, navigate workforce programs, and sit with students who are motivated and capable but have no idea where to start.
+          </p>
+          <p>
+            The problem I kept running into wasn't effort. It was information. There was no single place a 209-area student could go to find out what was available. Government websites are outdated. School counselors are stretched thin. National job boards have nothing local. Students were missing deadlines for programs they'd never even heard of — programs they'd have been perfect for.
+          </p>
+          <p>
+            I've been in 209-area classrooms and programs since 2017. Before the DOR, I taught in the Stanislaus County school system and spent time as an academic teacher inside the CDCR juvenile justice facility in Stockton — working with some of the most overlooked young people in our region. That experience shaped everything about how I think about access to opportunity.
+          </p>
+          <p>
+            The students I work with — students with disabilities, students who've been incarcerated, first-generation students who don't have a network to tap — are exactly the students who get left behind when information is scattered and hard to find. Internships209 is my attempt to change that, one listing at a time.
+          </p>
+          <p>
+            This site is free. It will stay free. The students in the 209 don't need another barrier — they need a door that's actually open.
+          </p>
+
+          <div style="margin-top: 2rem; padding: 1.25rem 1.5rem; background: var(--blue-50); border-left: 4px solid var(--blue-700); border-radius: 0 var(--radius) var(--radius) 0;">
+            <p style="font-size:0.95rem; font-style:italic; color:var(--blue-900); margin:0; line-height:1.7;">
+              "The opportunity gap in the 209 is real. But so is the talent. Students here are ready — they just need someone to tell them where the door is."
+            </p>
+            <p style="font-size:0.82rem; font-weight:700; color:var(--blue-700); margin: 0.6rem 0 0; letter-spacing:0.02em;">— Baris Kourdou, Founder</p>
+          </div>
+        </div>
+
+        <!-- Right: Timeline + Credentials -->
+        <div>
+          <h2 style="font-size:1.2rem; font-weight:800; margin-bottom:1.5rem; color:var(--gray-900);">Background & Experience</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot dot-current"></div>
+              <div class="timeline-year">2021 — Present</div>
+              <div class="timeline-title">Student Services Coordinator</div>
+              <div class="timeline-org">California Department of Rehabilitation (DOR) · 209 Area</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2020 — 2021</div>
+              <div class="timeline-title">Academic Teacher</div>
+              <div class="timeline-org">CDCR Juvenile Justice · Stockton, CA</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2017 — 2019</div>
+              <div class="timeline-title">Substitute Teacher</div>
+              <div class="timeline-org">Stanislaus County Office of Education · Turlock, CA</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2017 — 2020</div>
+              <div class="timeline-title">Master of Political Science &amp; Government</div>
+              <div class="timeline-org">California State University, Sacramento</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2014 — 2016</div>
+              <div class="timeline-title">Bachelor of Arts, History</div>
+              <div class="timeline-org">California State University, Northridge</div>
+            </div>
+          </div>
+
+          <div class="credential-grid" style="margin-top:2rem;">
+            <div class="credential-card">
+              <div class="cred-icon">🏛️</div>
+              <h4>DOR Insider Knowledge</h4>
+              <p>Works daily with Pre-ETS, SWEP, and vocational rehab programs — the same programs on our DOR Services page.</p>
+            </div>
+            <div class="credential-card">
+              <div class="cred-icon">🤝</div>
+              <h4>Employer Partnerships</h4>
+              <p>Directly engages businesses and workforce boards to develop paid internship placements for 209 youth.</p>
+            </div>
+            <div class="credential-card">
+              <div class="cred-icon">📋</div>
+              <h4>All Students</h4>
+              <p>Experience supporting students with disabilities, incarcerated youth, and first-generation students.</p>
+            </div>
+            <div class="credential-card">
+              <div class="cred-icon">📍</div>
+              <h4>209 Born &amp; Based</h4>
+              <p>Lives and works in Turlock, CA. This community isn't a target market — it's home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:2rem;">
+        <h2 style="font-size:1.5rem; font-weight:800; margin-bottom:0.6rem;">The Site's Commitments</h2>
+        <p style="color:var(--gray-500); max-width:520px; margin:0 auto;">What this site stands for — and what it will never compromise on.</p>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; max-width:900px; margin:0 auto;">
+        <div class="mission-card">
+          <div class="mission-icon">🆓</div>
+          <h3>Free for Every Student</h3>
+          <p>No accounts. No fees. No paywall. Every listing and every resource on this site is free for every student, period. That will never change.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">✅</div>
+          <h3>Real, Verified Listings</h3>
+          <p>Every listing is checked before it goes up. No ghost postings, no spam, no listings that lead nowhere. Just real opportunities from real organizations.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">🌎</div>
+          <h3>Bilingual &amp; Accessible</h3>
+          <p>The site is available in English and Spanish. The 209 is a bilingual community — this resource should be too.</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">🔄</div>
+          <h3>Actively Maintained</h3>
+          <p>Listings are updated regularly. Expired opportunities are removed. New ones are added as they come in. This is a living resource, not a snapshot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / GET INVOLVED -->
+  <section class="contact-section">
+    <div class="container-sm">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2.5rem; align-items:start;">
+
+        <div>
+          <h2 style="font-size:1.3rem; font-weight:800; margin-bottom:0.75rem;">Get in Touch</h2>
+          <p style="color:var(--gray-600); line-height:1.7; margin-bottom:1.25rem;">
+            Questions, feedback, or want to list an opportunity? I read every email personally.
+          </p>
+          <a href="mailto:hello@internships209.com" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:0.5rem;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            hello@internships209.com
+          </a>
+        </div>
+
+        <div>
+          <h2 style="font-size:1.3rem; font-weight:800; margin-bottom:0.75rem;">Know a Listing We're Missing?</h2>
+          <p style="color:var(--gray-600); line-height:1.7; margin-bottom:1.25rem;">
+            If you work at a school, nonprofit, or organization that offers internships or work experience for 209-area students — or if you know of a program that should be here — please reach out or submit it directly.
+          </p>
+          <a href="submit.html" class="btn btn-outline">Submit a Listing →</a>
+        </div>
+
+      </div>
+
+      <hr class="divider" style="margin: 3rem 0;" />
+
+      <!-- SEO: area served -->
+      <div style="text-align:center;">
+        <p style="font-size:0.82rem; color:var(--gray-400); line-height:1.6;">
+          Internships209 serves students across <strong style="color:var(--gray-500);">San Joaquin County</strong>, <strong style="color:var(--gray-500);">Stanislaus County</strong>, and <strong style="color:var(--gray-500);">Merced County</strong> — including Stockton, Modesto, Merced, Turlock, Tracy, Manteca, Lodi, and surrounding communities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <span style="background:#1A56A4; color:white; padding:0.15rem 0.5rem; border-radius:6px; font-weight:800; font-size:0.95rem;">209</span>
+            <span style="color:white; font-weight:700;">Internships</span>
+          </div>
+          <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="listings.html">Browse Listings</a>
+            <a href="listings.html?type=paid">Paid Internships</a>
+            <a href="listings.html?age=hs">High School Students</a>
+            <a href="listings.html?remote=true">Remote Opportunities</a>
+          </div>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <div class="footer-links">
+            <a href="resources.html#work-permit">Work Permit Guide</a>
+            <a href="resources.html#resume">Resume Template</a>
+            <a href="resources.html#interview">Interview Tips</a>
+            <a href="dor.html">DOR Student Services</a>
+          </div>
+        </div>
+        <div>
+          <h4>About</h4>
+          <div class="footer-links">
+            <a href="about.html">Our Story</a>
+            <a href="submit.html">For Employers</a>
+            <a href="mailto:hello@internships209.com">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Internships209. Built for the 209 community.</p>
+        <p><a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

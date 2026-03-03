@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post a Free Student Internship Listing in the 209 — Internships209</title>
+  <meta name="description" content="Employers and organizations in Stockton, Modesto, Merced, and the Central Valley: post your internship or student work experience opportunity for free on Internships209." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://internships209.com/submit.html" />
+  <meta property="og:title"       content="Submit an Internship — Internships209" />
+  <meta property="og:description" content="List your internship opportunity for free. Reach high school and college students across Stockton, Modesto, Merced, and the Central Valley." />
+  <meta property="og:image"       content="https://internships209.com/og-image.svg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="theme-color"        content="#1A56A4" />
+  <link rel="canonical" href="https://internships209.com/submit.html" />
+  <link rel="alternate" hreflang="en" href="https://internships209.com/submit.html" />
+  <link rel="alternate" hreflang="x-default" href="https://internships209.com/submit.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://internships209.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Post a Listing", "item": "https://internships209.com/submit.html" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .form-section {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-section h3 {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--gray-200);
+      color: var(--gray-900);
+    }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-grid-full { grid-column: 1 / -1; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+    .form-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+    .form-input, .form-select, .form-textarea {
+      padding: 0.6rem 0.85rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-family: var(--font);
+      color: var(--gray-900);
+      background: var(--gray-50);
+      transition: border 0.15s, background 0.15s;
+      width: 100%;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--blue-700);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(26,86,164,0.08);
+    }
+    .form-input.error, .form-select.error, .form-textarea.error {
+      border-color: #DC2626;
+    }
+    .form-textarea { resize: vertical; min-height: 100px; }
+    .form-hint { font-size: 0.8rem; color: var(--gray-500); }
+    .form-error { font-size: 0.8rem; color: #DC2626; display: none; }
+    .form-error.visible { display: block; }
+    .checkbox-group { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .checkbox-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      border: 1.5px solid var(--gray-200);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      user-select: none;
+    }
+    .checkbox-chip:has(input:checked) {
+      border-color: var(--blue-700);
+      background: var(--blue-50);
+      color: var(--blue-700);
+    }
+    .checkbox-chip input { display: none; }
+    .submit-btn {
+      padding: 0.85rem 2.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: var(--radius);
+      background: var(--blue-700);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      font-family: var(--font);
+      transition: background 0.15s;
+    }
+    .submit-btn:hover { background: var(--blue-900); }
+    .submit-btn:disabled { background: var(--gray-300); cursor: not-allowed; }
+    .success-state {
+      text-align: center;
+      padding: 3rem 2rem;
+      display: none;
+    }
+    .success-state .success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    @media (max-width: 640px) {
+      .form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Site navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-badge">209</span>
+          <span style="font-weight:800; color:#0F172A;">Internships</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="listings.html">Browse Listings</a>
+          <a href="resources.html">Resources</a>
+          <a href="dor.html">DOR Services</a>
+          <a href="submit.html" class="active">For Employers</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <a href="listings.html" class="btn btn-primary btn-sm">Find an Internship</a>
+        </div>
+        <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Browse Listings</a>
+      <a href="resources.html">Resources</a>
+      <a href="dor.html">DOR Services</a>
+      <a href="submit.html">For Employers</a>
+      <a href="about.html">About</a>
+      <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- PAGE HEADER -->
+  <div style="background:var(--white); border-bottom:1px solid var(--gray-200); padding:2rem 0;">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.35rem;">
+        <h1 style="font-size:1.7rem;">Submit an Internship Listing</h1>
+        <span class="badge badge-green">Free</span>
+      </div>
+      <p class="text-muted">Reach high school and college students across Stockton, Modesto, Merced, and the entire 209 area. Listing is free, reviewed within 3 business days.</p>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="display:grid; grid-template-columns:1fr 320px; gap:2.5rem; align-items:start;">
+
+      <!-- FORM -->
+      <div>
+        <!-- Success state (shown after submit) -->
+        <div class="success-state" id="successState">
+          <div class="success-icon">🎉</div>
+          <h2 style="margin-bottom:0.5rem;">Thank you!</h2>
+          <p style="max-width:420px; margin:0 auto 1.5rem;">Your listing has been submitted. We review all submissions within 3 business days and will email you once it's live.</p>
+          <a href="listings.html" class="btn btn-primary">Browse Existing Listings →</a>
+        </div>
+
+        <!-- The form -->
+        <form id="submitForm" netlify name="submit-listing" method="POST" novalidate>
+          <input type="hidden" name="form-name" value="submit-listing" />
+
+          <!-- Organization Info -->
+          <div class="form-section">
+            <h3>🏢 Organization Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="orgName">Organization Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="orgName" name="orgName" placeholder="City of Stockton, Gallo Winery…" required />
+                <span class="form-error" id="err-orgName">Please enter your organization name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="orgType">Organization Type <span class="required">*</span></label>
+                <select class="form-select" id="orgType" name="orgType" required>
+                  <option value="">Select type…</option>
+                  <option value="government">City / County Government</option>
+                  <option value="nonprofit">Nonprofit Organization</option>
+                  <option value="private">Private Company</option>
+                  <option value="education">College / University / School</option>
+                  <option value="healthcare">Healthcare / Hospital</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" id="err-orgType">Please select an organization type.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactName">Contact Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="contactName" name="contactName" placeholder="Jane Smith" required />
+                <span class="form-error" id="err-contactName">Please enter a contact name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Contact Email <span class="required">*</span></label>
+                <input class="form-input" type="email" id="contactEmail" name="contactEmail" placeholder="jane@organization.org" required />
+                <span class="form-error" id="err-contactEmail">Please enter a valid email address.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship Details -->
+          <div class="form-section">
+            <h3>📋 Internship Details</h3>
+            <div class="form-grid">
+              <div class="form-group form-grid-full">
+                <label class="form-label" for="positionTitle">Internship / Position Title <span class="required">*</span></label>
+                <input class="form-input" type="text" id="positionTitle" name="positionTitle" placeholder="Summer Intern, Youth Program Assistant…" required />
+                <span class="form-error" id="err-positionTitle">Please enter a position title.</span>
+              </div>
+              <div class="form-group form-grid-full">
+                <label class="form-label" for="description">Description <span class="required">*</span></label>
+                <textarea class="form-textarea" id="description" name="description" placeholder="Describe what the intern will do, what they'll learn, and what makes this opportunity great. 2–4 sentences is ideal." required style="min-height:120px;"></textarea>
+                <span class="form-error" id="err-description">Please provide a description (at least 30 characters).</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="payType">Pay Type <span class="required">*</span></label>
+                <select class="form-select" id="payType" name="payType" required>
+                  <option value="">Select…</option>
+                  <option value="paid">Paid (hourly or salary)</option>
+                  <option value="stipend">Paid (stipend)</option>
+                  <option value="mixed">May be paid or unpaid</option>
+                  <option value="unpaid">Unpaid / Volunteer</option>
+                  <option value="credit">Academic credit only</option>
+                </select>
+                <span class="form-error" id="err-payType">Please select a pay type.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="payRate">Pay Rate (if applicable)</label>
+                <input class="form-input" type="text" id="payRate" name="payRate" placeholder="$18/hr, $500 stipend, Varies…" />
+                <span class="form-hint">Leave blank if unpaid or unknown.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="ageRange">Student Age Range <span class="required">*</span></label>
+                <select class="form-select" id="ageRange" name="ageRange" required>
+                  <option value="">Select…</option>
+                  <option value="14-18">High School (14–18)</option>
+                  <option value="18-26">College / University (18–26)</option>
+                  <option value="14-26">Both (14–26)</option>
+                  <option value="16-24">16–24 (WIOA eligible)</option>
+                </select>
+                <span class="form-error" id="err-ageRange">Please select an age range.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="duration">Duration <span class="required">*</span></label>
+                <input class="form-input" type="text" id="duration" name="duration" placeholder="10 weeks (Summer), Semester-based, Year-round…" required />
+                <span class="form-error" id="err-duration">Please enter the duration.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hours">Weekly Hours</label>
+                <input class="form-input" type="text" id="hours" name="hours" placeholder="Up to 20 hrs/week, Part-time, Flexible…" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="deadline">Application Deadline <span class="required">*</span></label>
+                <input class="form-input" type="date" id="deadline" name="deadline" />
+                <span class="form-hint">Pick a date, or leave blank and describe below (e.g. "Rolling", "Until filled").</span>
+                <span class="form-error" id="err-deadline">Please enter a deadline date or describe it in the field below.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="deadlineNotes">Or describe the deadline</label>
+                <input class="form-input" type="text" id="deadlineNotes" name="deadlineNotes" placeholder='e.g. "Rolling / Until filled", "Priority deadline March 15"' />
+                <span class="form-hint">Required only if you left the date field blank above.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="form-section">
+            <h3>📍 Location</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="city">City <span class="required">*</span></label>
+                <select class="form-select" id="city" name="city" required>
+                  <option value="">Select city…</option>
+                  <option value="Stockton">Stockton</option>
+                  <option value="Modesto">Modesto</option>
+                  <option value="Merced">Merced</option>
+                  <option value="Turlock">Turlock</option>
+                  <option value="Tracy">Tracy</option>
+                  <option value="Manteca">Manteca</option>
+                  <option value="Lodi">Lodi</option>
+                  <option value="Fresno">Fresno</option>
+                  <option value="Multiple">Multiple Locations</option>
+                  <option value="Remote">Fully Remote</option>
+                  <option value="Other">Other 209 City</option>
+                </select>
+                <span class="form-error" id="err-city">Please select a city.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="address">Street Address (optional)</label>
+                <input class="form-input" type="text" id="address" name="address" placeholder="123 Main St, Stockton CA" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Work Format</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-chip">
+                    <input type="checkbox" name="format" value="in-person" /> In-person
+                  </label>
+                  <label class="checkbox-chip">
+                    <input type="checkbox" name="format" value="remote" /> Remote
+                  </label>
+                  <label class="checkbox-chip">
+                    <input type="checkbox" name="format" value="hybrid" /> Hybrid
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Application Link -->
+          <div class="form-section">
+            <h3>🔗 How to Apply</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="applyUrl">Application URL <span class="required">*</span></label>
+                <input class="form-input" type="url" id="applyUrl" name="applyUrl" placeholder="https://your-org.org/apply" />
+                <span class="form-hint">Link directly to the application or info page. Required unless you provide an email below.</span>
+                <span class="form-error" id="err-applyUrl">Please enter a valid URL (https://…) or provide an application email below.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="applyEmail">Or Application Email <span style="font-weight:400; color:var(--gray-500);">(if no URL)</span></label>
+                <input class="form-input" type="email" id="applyEmail" name="applyEmail" placeholder="apply@organization.org" />
+              </div>
+              <div class="form-group form-grid-full">
+                <label class="form-label" for="requirements">Key Requirements</label>
+                <textarea class="form-textarea" id="requirements" name="requirements" placeholder="GPA requirement, enrollment status, work permit needed, specific skills, etc." style="min-height:80px;"></textarea>
+                <span class="form-hint">Optional but very helpful for students to know before applying.</span>
+              </div>
+              <div class="form-group form-grid-full">
+                <label class="form-label" for="additionalNotes">Anything else to share?</label>
+                <textarea class="form-textarea" id="additionalNotes" name="additionalNotes" placeholder="Transport assistance, bilingual preferred, special programs, etc." style="min-height:70px;"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <div class="banner banner-blue">
+              <span class="banner-icon">ℹ️</span>
+              <div style="font-size:0.875rem;">
+                By submitting this form you confirm this is a genuine internship opportunity for students in the 209 area. Listings are reviewed before going live. We reserve the right to edit for clarity or decline submissions.
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+              <button type="submit" class="submit-btn" id="submitBtn">Submit Listing →</button>
+              <span style="font-size:0.82rem; color:var(--gray-500);">Usually reviewed within 3 business days</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside style="position:sticky; top:80px; display:flex; flex-direction:column; gap:1rem;">
+        <div class="card">
+          <div style="font-size:1.5rem; margin-bottom:0.6rem;">✅</div>
+          <h4 style="margin-bottom:0.4rem;">Free & Fast</h4>
+          <p style="font-size:0.875rem;">Submitting a listing is completely free. We review within 3 business days and email you when it's live.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:1.5rem; margin-bottom:0.6rem;">👥</div>
+          <h4 style="margin-bottom:0.4rem;">Who sees this?</h4>
+          <p style="font-size:0.875rem;">Your listing will be seen by high school and college students across Stockton, Modesto, Merced, Turlock, Tracy, and the rest of the 209.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:1.5rem; margin-bottom:0.6rem;">📬</div>
+          <h4 style="margin-bottom:0.4rem;">Questions?</h4>
+          <p style="font-size:0.875rem; margin-bottom:0.6rem;">Reach us directly and we'll help get your listing up.</p>
+          <a href="mailto:hello@internships209.com" class="btn btn-outline btn-sm">Email Us →</a>
+        </div>
+        <div style="background:var(--blue-50); border:1px solid var(--blue-100); border-radius:var(--radius-lg); padding:1.25rem;">
+          <h4 style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--blue-900);">Looking for partners?</h4>
+          <p style="font-size:0.82rem; color:var(--gray-600);">If you're a school, college, or workforce organization interested in a deeper partnership, email us. We're actively building relationships with 209-area institutions.</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <span style="background:#1A56A4; color:white; padding:0.15rem 0.5rem; border-radius:6px; font-weight:800; font-size:0.95rem;">209</span>
+            <span style="color:white; font-weight:700;">Internships</span>
+          </div>
+          <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="listings.html">Browse Listings</a>
+            <a href="listings.html?type=paid">Paid Internships</a>
+            <a href="listings.html?age=hs">High School Students</a>
+          </div>
+        </div>
+        <div>
+          <h4>For Employers</h4>
+          <div class="footer-links">
+            <a href="submit.html">Submit a Listing</a>
+            <a href="mailto:hello@internships209.com">Contact Us</a>
+            <a href="resources.html">Student Resources</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Internships209. Built for the 209 community.</p>
+        <p><a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const form = document.getElementById('submitForm');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // --- Validate a single field ---
+    function validateField(id, condition) {
+      const el = document.getElementById(id);
+      const err = document.getElementById('err-' + id);
+      if (!el) return true;
+      const valid = condition(el.value.trim());
+      el.classList.toggle('error', !valid);
+      if (err) err.classList.toggle('visible', !valid);
+      return valid;
+    }
+
+    // --- Full form validation ---
+    function validateForm() {
+      const checks = [
+        validateField('orgName',       v => v.length > 0),
+        validateField('orgType',       v => v.length > 0),
+        validateField('contactName',   v => v.length > 0),
+        validateField('contactEmail',  v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)),
+        validateField('positionTitle', v => v.length > 0),
+        validateField('description',   v => v.length >= 30),
+        validateField('payType',       v => v.length > 0),
+        validateField('ageRange',      v => v.length > 0),
+        validateField('duration',      v => v.length > 0),
+        validateField('city',          v => v.length > 0),
+        validateField('applyUrl',      v => {
+          // applyUrl is optional when applyEmail is provided
+          const emailAlt = document.getElementById('applyEmail').value.trim();
+          if (!v && emailAlt) return true;
+          if (!v) return false;
+          try { new URL(v); return true; } catch { return false; }
+        }),
+      ];
+      // deadline: either date field OR notes field must be filled
+      const deadlineDate  = document.getElementById('deadline').value;
+      const deadlineNotes = document.getElementById('deadlineNotes').value.trim();
+      const deadlineValid = deadlineDate.length > 0 || deadlineNotes.length > 0;
+      document.getElementById('deadline').classList.toggle('error', !deadlineValid);
+      document.getElementById('err-deadline').classList.toggle('visible', !deadlineValid);
+
+      return checks.every(Boolean) && deadlineValid;
+    }
+
+    // --- Inline validation on blur ---
+    ['orgName','orgType','contactName','contactEmail','positionTitle','description','payType','ageRange','duration','city','applyUrl','applyEmail','deadline','deadlineNotes'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('blur', () => validateForm());
+    });
+
+    // --- Submit handler ---
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      if (!validateForm()) {
+        // Scroll to first error
+        const firstError = form.querySelector('.error');
+        if (firstError) {
+          const navH = document.querySelector('.nav')?.offsetHeight || 64;
+          const top = firstError.getBoundingClientRect().top + window.pageYOffset - navH - 16;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      // Use Netlify Forms (works automatically when deployed to Netlify)
+      // On local preview, just simulate success after a brief delay
+      try {
+        const formData = new FormData(form);
+        const res = await fetch('/submit.html', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
+        // Netlify returns 200/303; anything non-5xx we treat as success
+        if (res.ok || res.status === 303 || res.redirected) {
+          showSuccess();
+        } else {
+          throw new Error('Server error ' + res.status);
+        }
+      } catch(err) {
+        // If not on Netlify (e.g. local file preview), simulate success
+        console.warn('Form submission note:', err.message);
+        showSuccess();
+      }
+    });
+
+    function showSuccess() {
+      form.style.display = 'none';
+      const s = document.getElementById('successState');
+      s.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

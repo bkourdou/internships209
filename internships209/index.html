@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internships209 — Student Internships &amp; Work Experience in Stockton, Modesto, Merced</title>
+  <meta name="description" content="Free internship listings for high school and college students in the 209 area. Find paid work experience in Stockton, Modesto, Merced, Turlock, and Tracy — all in one place." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://internships209.com/" />
+  <meta property="og:title"       content="Internships209 — Find Your First Opportunity in the Central Valley" />
+  <meta property="og:description" content="Free internship listings for high school and college students across Stockton, Modesto, Merced, and the Central Valley 209 area." />
+  <meta property="og:image"       content="https://internships209.com/og-image.svg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="theme-color"        content="#1A56A4" />
+  <link rel="canonical" href="https://internships209.com/" />
+  <link rel="alternate" hreflang="en" href="https://internships209.com/" />
+  <link rel="alternate" hreflang="es" href="https://internships209.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://internships209.com/" />
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="preload" href="js/main.js" as="script" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Structured Data: WebSite + Organization (improves Google rich results) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Internships209",
+      "url": "https://internships209.com/",
+      "description": "Free internship listings for high school and college students across Stockton, Modesto, Merced, and the Central Valley 209 area.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://internships209.com/listings.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Internships209",
+      "url": "https://internships209.com/",
+      "logo": "https://internships209.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@internships209.com",
+        "contactType": "customer support"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Stockton", "addressRegion": "CA" },
+        { "@type": "City", "name": "Modesto", "addressRegion": "CA" },
+        { "@type": "City", "name": "Merced", "addressRegion": "CA" },
+        { "@type": "City", "name": "Turlock", "addressRegion": "CA" },
+        { "@type": "City", "name": "Tracy", "addressRegion": "CA" }
+      ],
+      "sameAs": [
+        "https://internships209.com"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Internships209 — Student Internships & Work Experience in the 209",
+      "url": "https://internships209.com/",
+      "description": "Free internship listings for high school and college students in the 209 area — Stockton, Modesto, Merced, Turlock, and Tracy.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-title", ".hero-subtitle", ".hero-stats"]
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Internships and work experience programs for students in California's Central Valley"
+      },
+      "keywords": "internships 209, student jobs Stockton, student internships Modesto, work experience Merced, high school internships Central Valley, paid internships 209 area code, college internships Stockton CA"
+    }
+  ]
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Site navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-badge">209</span>
+          <span style="font-weight:800; color:#0F172A;">Internships</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="active" data-en="Home" data-es="Inicio">Home</a>
+          <a href="listings.html" data-en="Browse Listings" data-es="Ver Oportunidades">Browse Listings</a>
+          <a href="resources.html" data-en="Resources" data-es="Recursos">Resources</a>
+          <a href="dor.html" data-en="DOR Services" data-es="Servicios DOR">DOR Services</a>
+          <a href="submit.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
+          <a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <a href="listings.html" class="btn btn-primary btn-sm" data-en="Find an Internship" data-es="Buscar Pasantías">Find an Internship</a>
+        </div>
+        <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Browse Listings</a>
+      <a href="resources.html">Resources</a>
+      <a href="dor.html">DOR Services</a>
+      <a href="submit.html">For Employers</a>
+      <a href="about.html">About</a>
+      <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10"/></svg>
+        Serving Stockton · Modesto · Merced &amp; All of the 209
+      </div>
+      <h1 data-en="Your Career Starts<br/>Right Here in the 209." data-es="Tu Carrera Comienza<br/>Aquí en el 209.">Your Career Starts<br/>Right Here in the 209.</h1>
+      <p data-en="Free internship listings for high school and college students across the Central Valley. Real opportunities. No spam. No paywall." data-es="Listas de pasantías gratuitas para estudiantes de preparatoria y universidad en todo el Valle Central. Oportunidades reales. Sin spam. Sin costo.">Free internship listings for high school and college students across the Central Valley. Real opportunities. No spam. No paywall.</p>
+      <div class="hero-actions">
+        <a href="listings.html" class="btn btn-white btn-lg" data-en="Browse All Internships →" data-es="Ver Todas las Pasantías →">Browse All Internships →</a>
+        <a href="resources.html" class="btn btn-outline btn-lg" style="color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.4);" data-en="Guides &amp; Resources" data-es="Guías y Recursos">Guides &amp; Resources</a>
+      </div>
+
+      <!-- Search -->
+      <form class="search-bar" role="search" aria-label="Search internships" onsubmit="event.preventDefault(); heroSearch();">
+        <label for="heroSearchInput" class="sr-only">Search by keyword, organization, or field</label>
+        <div class="search-input-wrap" style="flex:2;">
+          <svg aria-hidden="true" width="16" height="16" fill="none" stroke="#94A3B8" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="heroSearchInput" placeholder="Search by keyword, company, or field…" autocomplete="off" />
+        </div>
+        <label for="heroCity" class="sr-only">Filter by city</label>
+        <select class="search-select" id="heroCity">
+          <option value="">All Cities</option>
+          <option value="Stockton">Stockton</option>
+          <option value="Modesto">Modesto</option>
+          <option value="Merced">Merced</option>
+          <option value="Turlock">Turlock</option>
+          <option value="Tracy">Tracy</option>
+        </select>
+        <label for="heroType" class="sr-only">Filter by pay type</label>
+        <select class="search-select" id="heroType">
+          <option value="">Any Type</option>
+          <option value="paid">Paid Only</option>
+          <option value="unpaid">Unpaid/Volunteer</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-value" id="stat-listings">34</div>
+          <div class="hero-stat-label">Active Listings</div>
+        </div>
+        <div>
+          <div class="hero-stat-value">32</div>
+          <div class="hero-stat-label">Partner Organizations</div>
+        </div>
+        <div>
+          <div class="hero-stat-value">3</div>
+          <div class="hero-stat-label">Counties Covered</div>
+        </div>
+        <div>
+          <div class="hero-stat-value">100%</div>
+          <div class="hero-stat-label">Free for Students</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- URGENT DEADLINES BANNER -->
+  <section class="section-sm" style="background:var(--white); border-bottom:1px solid var(--gray-200);">
+    <div class="container">
+      <div class="banner banner-orange">
+        <span class="banner-icon">⏰</span>
+        <div>
+          <strong>Applications closing soon:</strong> City of Stockton Y.E.S.S. Program deadline is <strong>March 6, 2026</strong>. Only 100 spots available — <a href="listings.html?filter=urgent" style="color:#C2410C; text-decoration:underline;">apply now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATEGORIES -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Browse by Category</h2>
+        <p>Find opportunities that match your interests and goals.</p>
+      </div>
+      <div class="cards-grid-3">
+        <a href="listings.html?cat=government" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">🏛️</div>
+          <h3 style="margin-bottom:0.35rem;">Government &amp; Public Service</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">Work for cities, counties, and public agencies across the 209.</p>
+          <span class="badge badge-blue">Most Available</span>
+        </a>
+        <a href="listings.html?cat=workforce" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">💼</div>
+          <h3 style="margin-bottom:0.35rem;">Workforce Development</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">WIOA-funded programs with training, stipends, and job placement.</p>
+          <span class="badge badge-green">Paid Programs</span>
+        </a>
+        <a href="listings.html?cat=private" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">🏢</div>
+          <h3 style="margin-bottom:0.35rem;">Private Sector</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">Companies like Gallo Winery, local healthcare systems, and more.</p>
+          <span class="badge badge-orange">Competitive</span>
+        </a>
+        <a href="listings.html?cat=education" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">🎓</div>
+          <h3 style="margin-bottom:0.35rem;">College &amp; University</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">Work-based learning programs through Delta College, MJC, UOP, and more.</p>
+          <span class="badge badge-gray">Earn Credits</span>
+        </a>
+        <a href="listings.html?remote=true" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">💻</div>
+          <h3 style="margin-bottom:0.35rem;">Remote &amp; Hybrid</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">No car? No problem. Opportunities you can do from home.</p>
+          <span class="badge badge-blue">Flexible</span>
+        </a>
+        <a href="listings.html?age=hs" class="card card-link" style="text-decoration:none;">
+          <div style="font-size:2rem; margin-bottom:0.75rem;">📚</div>
+          <h3 style="margin-bottom:0.35rem;">High School Students</h3>
+          <p style="font-size:0.875rem; margin-bottom:0.75rem;">Programs open to students 14–18, including summer jobs.</p>
+          <span class="badge badge-green">Ages 14–18</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED LISTINGS -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <h2>Featured Opportunities</h2>
+          <p class="text-muted">Handpicked from programs across the 209.</p>
+        </div>
+        <a href="listings.html" class="btn btn-outline">View All Listings →</a>
+      </div>
+      <div id="featuredListings" class="cards-grid-2" aria-live="polite" aria-label="Featured internship listings">
+        <!-- Skeleton placeholders shown while data loads -->
+        <div class="listing-card" aria-hidden="true" style="animation:pulse 1.4s ease-in-out infinite;">
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:40%; margin-bottom:0.6rem;"></div>
+          <div style="height:1rem; background:var(--gray-200); border-radius:4px; width:75%; margin-bottom:0.8rem;"></div>
+          <div style="display:flex; gap:0.5rem; margin-bottom:0.8rem;">
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:4rem;"></div>
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:5.5rem;"></div>
+          </div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:90%; margin-bottom:0.4rem;"></div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:70%;"></div>
+        </div>
+        <div class="listing-card" aria-hidden="true" style="animation:pulse 1.4s ease-in-out infinite; animation-delay:0.15s;">
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:50%; margin-bottom:0.6rem;"></div>
+          <div style="height:1rem; background:var(--gray-200); border-radius:4px; width:80%; margin-bottom:0.8rem;"></div>
+          <div style="display:flex; gap:0.5rem; margin-bottom:0.8rem;">
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:5rem;"></div>
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:4.5rem;"></div>
+          </div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:85%; margin-bottom:0.4rem;"></div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:60%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY THIS SITE / ABOUT -->
+  <section class="section" id="about" style="background:var(--blue-50); border-top:1px solid var(--blue-100); border-bottom:1px solid var(--blue-100);">
+    <div class="container-sm" style="text-align:center;">
+      <h2 style="margin-bottom:1rem;">Built for the 209. By someone who gets it.</h2>
+      <p style="font-size:1.05rem; max-width:620px; margin:0 auto 1.75rem;">
+        The Central Valley is home to hundreds of thousands of talented young people — but finding internships here has always meant digging through outdated government websites, asking counselors who are stretched thin, or simply not knowing what's out there. This site changes that.
+      </p>
+      <div class="cards-grid-3" style="text-align:left; margin-top:1.5rem;">
+        <div style="background:white; border-radius:12px; padding:1.35rem; border:1px solid var(--blue-100);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🔍</div>
+          <h4 style="margin-bottom:0.4rem;">Everything in One Place</h4>
+          <p style="font-size:0.875rem;">Government programs, private employers, and college career centers — all searchable from a single site.</p>
+        </div>
+        <div style="background:white; border-radius:12px; padding:1.35rem; border:1px solid var(--blue-100);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">📋</div>
+          <h4 style="margin-bottom:0.4rem;">Real Info, Clearly Explained</h4>
+          <p style="font-size:0.875rem;">We show eligibility requirements, pay, deadlines, and what you need to apply — no hunting around.</p>
+        </div>
+        <div style="background:white; border-radius:12px; padding:1.35rem; border:1px solid var(--blue-100);">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🤝</div>
+          <h4 style="margin-bottom:0.4rem;">Free, Always</h4>
+          <p style="font-size:0.875rem;">This site is free for every student. No accounts, no fees, no subscription — just opportunities.</p>
+        </div>
+      </div>
+      <div style="margin-top:2rem;">
+        <a href="about.html" class="btn btn-outline" style="display:inline-flex; align-items:center; gap:0.4rem;">Meet the person behind the site →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK RESOURCE LINKS -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <h2>Resources to Get You Ready</h2>
+          <p class="text-muted">Everything you need to land an internship in the 209.</p>
+        </div>
+        <a href="resources.html" class="btn btn-outline">All Resources →</a>
+      </div>
+      <div class="cards-grid-3">
+        <a href="resources.html#work-permit" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon resource-icon-blue">📄</div>
+          <h3>How to Get a Work Permit</h3>
+          <p>Required if you're 16–17 in California. Step-by-step guide to getting yours fast.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Read guide →</span>
+        </a>
+        <a href="resources.html#resume" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon resource-icon-green">📝</div>
+          <h3>Write Your First Resume</h3>
+          <p>No experience? No problem. A simple template and tips for first-time applicants.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Read guide →</span>
+        </a>
+        <a href="resources.html#unpaid" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon resource-icon-orange">💵</div>
+          <h3>Can't Afford Unpaid?</h3>
+          <p>Programs that pay stipends, cover transportation, or offer academic credit instead.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">See options →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+            <span style="background:#1A56A4; color:white; padding:0.15rem 0.5rem; border-radius:6px; font-weight:800; font-size:0.95rem;">209</span>
+            <span style="color:white; font-weight:700;">Internships</span>
+          </div>
+          <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="listings.html">Browse Listings</a>
+            <a href="listings.html?type=paid">Paid Internships</a>
+            <a href="listings.html?age=hs">High School Students</a>
+            <a href="listings.html?remote=true">Remote Opportunities</a>
+          </div>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <div class="footer-links">
+            <a href="resources.html#work-permit">Work Permit Guide</a>
+            <a href="resources.html#resume">Resume Template</a>
+            <a href="resources.html#interview">Interview Tips</a>
+            <a href="resources.html#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Internships209. Built for the 209 community. Not affiliated with any government agency.</p>
+        <p>Updated regularly. <a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Hero search (form submit fires heroSearch via onsubmit)
+    function heroSearch() {
+      const q    = document.getElementById('heroSearchInput').value.trim();
+      const city = document.getElementById('heroCity').value;
+      const type = document.getElementById('heroType').value;
+      const params = new URLSearchParams();
+      if (q)    params.set('q', q);
+      if (city) params.set('city', city);
+      if (type) params.set('type', type);
+      window.location.href = 'listings.html' + (params.toString() ? '?' + params.toString() : '');
+    }
+
+    // Load featured listings — show 4 most urgent/interesting ones
+    async function loadFeatured() {
+      try {
+        const res = await fetch('data/listings.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        document.getElementById('stat-listings').textContent = data.length;
+
+        // Sort: urgent paid listings first, then by soonest deadline
+        const sorted = [...data].sort((a, b) => {
+          const da = a.deadline === 'Rolling' ? 9999 : (daysUntil(a.deadline) ?? 9999);
+          const db = b.deadline === 'Rolling' ? 9999 : (daysUntil(b.deadline) ?? 9999);
+          // Paid first, then soonest deadline
+          if (a.type !== b.type) {
+            const order = { paid: 0, mixed: 1, unpaid: 2 };
+            return (order[a.type] ?? 3) - (order[b.type] ?? 3);
+          }
+          return da - db;
+        });
+
+        const container = document.getElementById('featuredListings');
+        // Clear skeleton and insert real cards
+        container.innerHTML = sorted.slice(0, 4).map(renderListingCard).join('');
+      } catch(e) {
+        console.error('Featured listings error:', e);
+        document.getElementById('featuredListings').innerHTML =
+          '<p style="color:var(--gray-500); font-size:0.9rem; grid-column:1/-1;">Could not load listings. <a href="listings.html">Browse all →</a></p>';
+      }
+    }
+    loadFeatured();
+  </script>
+</body>
+</html>
