@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internships &amp; Student Jobs in Stockton, Modesto, Merced — Internships209</title>
-  <meta name="description" content="Browse 27+ paid internships and work experience programs for high school and college students in Stockton, Modesto, Merced, Turlock, Tracy, and the 209 area. Filter by pay, city, and age." />
+  <title>Internships &amp; Student Jobs in Stockton, Modesto &amp; Merced | 209</title>
+  <meta name="description" content="Browse 34+ paid internships for students in Stockton, Modesto, Merced, and the Central Valley. Filter by city, type, and deadline. Updated weekly." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://internships209.com/listings.html" />
@@ -63,11 +63,13 @@
           <a href="listings.html" class="active" data-en="Browse Listings" data-es="Ver Oportunidades">Browse Listings</a>
           <a href="resources.html" data-en="Resources" data-es="Recursos">Resources</a>
           <a href="dor.html" data-en="DOR Services" data-es="Servicios DOR">DOR Services</a>
-          <a href="submit.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
+          <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
+          <a href="employers.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
           <a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a>
         </div>
         <div class="nav-actions">
-          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish" aria-label="Switch language">Español</button>
+          <a href="saved.html" class="btn btn-outline btn-sm" aria-label="Saved listings" title="Saved listings" style="position:relative; padding-right:0.6rem;">♡<span class="saved-badge" aria-live="polite"></span></a>
           <a href="listings.html" class="btn btn-primary btn-sm" data-en="Browse Listings" data-es="Ver Oportunidades">Browse Listings</a>
         </div>
         <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -80,8 +82,9 @@
       <a href="listings.html">Browse Listings</a>
       <a href="resources.html">Resources</a>
       <a href="dor.html">DOR Services</a>
-      <a href="submit.html">For Employers</a>
+      <a href="blog/index.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="employers.html">For Employers</a>
       <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
     </div>
   </nav>
@@ -213,19 +216,17 @@
           <span id="mobileFilterCount" style="background:var(--blue-700);color:white;border-radius:20px;padding:0.1rem 0.55rem;font-size:0.8rem;display:none;">0</span>
         </button>
         <!-- Last updated stamp (hidden until data loads) -->
-        <p id="lastUpdated" style="display:none; font-size:0.78rem; color:var(--gray-500); margin-bottom:0.4rem;"></p>
-        <!-- Sort + result count bar -->
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;">
-          <p class="result-count" id="resultCount" style="margin-bottom:0;" aria-live="polite" aria-atomic="true">Loading listings…</p>
-          <div style="display:flex; align-items:center; gap:0.5rem;">
-            <label for="sortSelect" style="font-size:0.82rem; color:var(--gray-500); white-space:nowrap;">Sort by:</label>
-            <select class="search-select" id="sortSelect" style="min-width:0; padding:0.4rem 0.75rem; font-size:0.85rem;">
-              <option value="deadline">Deadline (Soonest)</option>
-              <option value="pay">Pay Type (Paid First)</option>
-              <option value="az">Name (A–Z)</option>
-              <option value="newest">Newest Added</option>
-            </select>
-          </div>
+        <p id="lastUpdated" style="display:none; font-size:0.875rem; color:var(--gray-600); margin-bottom:0.4rem;"></p>
+        <!-- Sort + result count bar (uses .sort-bar CSS class, no inline styles needed) -->
+        <div class="sort-bar">
+          <p class="result-count" id="resultCount" style="margin-bottom:0; flex:1;" aria-live="polite" aria-atomic="true">Loading listings…</p>
+          <label for="sortSelect" class="sort-bar label">Sort by:</label>
+          <select class="sort-select" id="sortSelect">
+            <option value="deadline">Deadline (Soonest)</option>
+            <option value="pay">Pay Type (Paid First)</option>
+            <option value="newest">Newest Added</option>
+            <option value="az">Name (A–Z)</option>
+          </select>
         </div>
         <!-- Active filter chips -->
         <div id="activeFilters" style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:0.75rem;"></div>
@@ -247,9 +248,13 @@
         </div>
         <div id="emptyState" class="empty-state hidden">
           <div class="empty-icon">🔍</div>
-          <h3>No listings found</h3>
-          <p>Try adjusting your filters or search terms.</p>
-          <button onclick="clearFilters()" class="btn btn-outline" style="margin-top:0.75rem;">Clear All Filters</button>
+          <h3>No listings match your filters</h3>
+          <p style="max-width:400px; margin:0 auto 0.5rem;">We don't have any listings matching those criteria right now — but we add new ones every week.</p>
+          <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap; margin-top:1rem;">
+            <button onclick="clearFilters()" class="btn btn-primary btn-sm">Clear All Filters</button>
+            <a href="index.html#newsletter" class="btn btn-outline btn-sm">Get notified when new ones are added →</a>
+          </div>
+          <p style="font-size:0.8rem; color:var(--gray-400); margin-top:1.25rem;">Know of an opportunity we're missing? <a href="mailto:hello@internships209.com" style="color:var(--blue-700);">Email us</a></p>
         </div>
         <div id="errorState" class="empty-state hidden">
           <div class="empty-icon">⚠️</div>
@@ -259,6 +264,20 @@
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <div style="background:linear-gradient(135deg,#1A3A5C 0%,#1A56A4 100%); padding:2.5rem 0;">
+    <div class="container-sm" style="text-align:center;">
+      <h3 style="color:white; margin-bottom:0.5rem;">📬 Get New Listings First</h3>
+      <p style="color:rgba(255,255,255,0.8); font-size:0.9rem; margin-bottom:1.25rem;">Free weekly email with new 209 internships, deadlines, and tips.</p>
+      <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" style="display:flex; gap:0.65rem; max-width:420px; margin:0 auto; flex-wrap:wrap; justify-content:center;">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <p style="display:none;"><label>Don't fill: <input name="bot-field" /></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required style="flex:1; min-width:180px; padding:0.65rem 1rem; border-radius:8px; border:none; font-size:0.9rem; font-family:inherit;" />
+        <button type="submit" class="btn btn-white btn-sm" style="white-space:nowrap;">Subscribe Free →</button>
+      </form>
     </div>
   </div>
 
@@ -285,6 +304,14 @@
             <span style="color:white; font-weight:700;">Internships</span>
           </div>
           <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.87a8.2 8.2 0 004.79 1.52v-3.4a4.84 4.84 0 01-1.02-.3z"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
@@ -298,16 +325,25 @@
         <div>
           <h4>Resources</h4>
           <div class="footer-links">
+            <a href="blog/index.html">Student Blog &amp; Tips</a>
             <a href="resources.html#work-permit">Work Permit Guide</a>
             <a href="resources.html#resume">Resume Template</a>
             <a href="resources.html#interview">Interview Tips</a>
-            <a href="resources.html#faq">FAQ</a>
+            <a href="dor.html">DOR Student Services</a>
+          </div>
+        </div>
+        <div>
+          <h4>About</h4>
+          <div class="footer-links">
+            <a href="about.html">Our Story</a>
+            <a href="employers.html">For Employers</a>
+            <a href="mailto:hello@internships209.com">Contact Us</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Internships209. Built for the 209 community.</p>
-        <p><a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+        <p>© 2026 Internships209. Built for the 209 community. Not affiliated with any government agency.</p>
+        <p>Updated regularly · <a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
       </div>
     </div>
   </footer>
@@ -431,6 +467,21 @@
     function applyURLParams() {
       const params = new URLSearchParams(window.location.search);
 
+      // If no URL params, try to restore last filter state from localStorage
+      if (!window.location.search) {
+        try {
+          const saved = JSON.parse(localStorage.getItem('listingsFilters') || 'null');
+          if (saved) {
+            if (saved.q)      document.getElementById('searchInput').value = saved.q;
+            if (saved.city)   document.getElementById('filterCity').value  = saved.city;
+            if (saved.type)   document.getElementById('filterType').value  = saved.type;
+            if (saved.remote) document.getElementById('filterRemote').checked = true;
+            if (saved.sort)   document.getElementById('sortSelect').value  = saved.sort;
+          }
+        } catch(e) {}
+        return;
+      }
+
       if (params.get('q'))    document.getElementById('searchInput').value = params.get('q');
       if (params.get('city')) document.getElementById('filterCity').value  = params.get('city');
       if (params.get('type')) document.getElementById('filterType').value  = params.get('type');
@@ -506,6 +557,18 @@
       renderResults(results);
       renderActiveFilterChips();
       updateMobileFilterBadge();
+      // Persist filter state for returning visitors (but not URL-driven sessions)
+      if (!window.location.search) {
+        try {
+          localStorage.setItem('listingsFilters', JSON.stringify({
+            q: document.getElementById('searchInput').value,
+            city: document.getElementById('filterCity').value,
+            type: document.getElementById('filterType').value,
+            remote: document.getElementById('filterRemote').checked,
+            sort: document.getElementById('sortSelect').value
+          }));
+        } catch(e) {}
+      }
     }
 
     function sortListings(results, sortBy) {
@@ -572,7 +635,7 @@
         type:     { paid: '💵 Paid', mixed: '💳 Paid/Unpaid', unpaid: '🔸 Unpaid' },
         category: { government: '🏛 Government', workforce: '💼 Workforce', private: '🏢 Private', education: '🎓 College' },
         ageGroup: { hs: '📚 High School', college: '🎓 College Students' },
-        city:     { Stockton: '📍 Stockton', Modesto: '📍 Modesto', Turlock: '📍 Turlock', Multiple: '📍 Multiple Locations' }
+        city:     { Stockton: '📍 Stockton', Modesto: '📍 Modesto', Merced: '📍 Merced', Turlock: '📍 Turlock', Multiple: '📍 Multiple Locations' }
       };
       document.querySelectorAll('.filter-check:checked').forEach(cb => {
         const ft = cb.getAttribute('data-filter');

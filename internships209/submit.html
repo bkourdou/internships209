@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Post a Free Student Internship Listing in the 209 — Internships209</title>
-  <meta name="description" content="Employers and organizations in Stockton, Modesto, Merced, and the Central Valley: post your internship or student work experience opportunity for free on Internships209." />
+  <meta name="description" content="Post a free internship listing for the 209. Reach teens in Stockton, Modesto, Merced, Turlock, and Tracy. Free for nonprofits, schools, and local employers." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://internships209.com/submit.html" />
@@ -138,11 +138,12 @@
           <a href="listings.html">Browse Listings</a>
           <a href="resources.html">Resources</a>
           <a href="dor.html">DOR Services</a>
-          <a href="submit.html" class="active">For Employers</a>
+          <a href="employers.html">For Employers</a>
           <a href="about.html">About</a>
         </div>
         <div class="nav-actions">
           <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <a href="saved.html" class="btn btn-outline btn-sm" aria-label="Saved listings" title="Saved listings" style="position:relative; padding-right:0.6rem;">♡<span class="saved-badge" aria-live="polite"></span></a>
           <a href="listings.html" class="btn btn-primary btn-sm">Find an Internship</a>
         </div>
         <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -155,7 +156,7 @@
       <a href="listings.html">Browse Listings</a>
       <a href="resources.html">Resources</a>
       <a href="dor.html">DOR Services</a>
-      <a href="submit.html">For Employers</a>
+      <a href="employers.html">For Employers</a>
       <a href="about.html">About</a>
       <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
     </div>
@@ -188,7 +189,7 @@
         </div>
 
         <!-- The form -->
-        <form id="submitForm" netlify name="submit-listing" method="POST" novalidate>
+        <form id="submitForm" netlify name="submit-listing" method="POST" action="/thanks.html" novalidate>
           <input type="hidden" name="form-name" value="submit-listing" />
 
           <!-- Organization Info -->
@@ -197,7 +198,7 @@
             <div class="form-grid">
               <div class="form-group">
                 <label class="form-label" for="orgName">Organization Name <span class="required">*</span></label>
-                <input class="form-input" type="text" id="orgName" name="orgName" placeholder="City of Stockton, Gallo Winery…" required />
+                <input class="form-input" type="text" id="orgName" name="orgName" placeholder="City of Stockton, Gallo Winery…" autocomplete="organization" required />
                 <span class="form-error" id="err-orgName">Please enter your organization name.</span>
               </div>
               <div class="form-group">
@@ -215,12 +216,12 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="contactName">Contact Name <span class="required">*</span></label>
-                <input class="form-input" type="text" id="contactName" name="contactName" placeholder="Jane Smith" required />
+                <input class="form-input" type="text" id="contactName" name="contactName" placeholder="Jane Smith" autocomplete="name" required />
                 <span class="form-error" id="err-contactName">Please enter a contact name.</span>
               </div>
               <div class="form-group">
                 <label class="form-label" for="contactEmail">Contact Email <span class="required">*</span></label>
-                <input class="form-input" type="email" id="contactEmail" name="contactEmail" placeholder="jane@organization.org" required />
+                <input class="form-input" type="email" id="contactEmail" name="contactEmail" placeholder="jane@organization.org" autocomplete="email" required />
                 <span class="form-error" id="err-contactEmail">Please enter a valid email address.</span>
               </div>
             </div>
@@ -315,7 +316,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="address">Street Address (optional)</label>
-                <input class="form-input" type="text" id="address" name="address" placeholder="123 Main St, Stockton CA" />
+                <input class="form-input" type="text" id="address" name="address" placeholder="123 Main St, Stockton CA" autocomplete="street-address" />
               </div>
               <div class="form-group">
                 <label class="form-label">Work Format</label>
@@ -414,6 +415,14 @@
             <span style="color:white; font-weight:700;">Internships</span>
           </div>
           <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.87a8.2 8.2 0 004.79 1.52v-3.4a4.84 4.84 0 01-1.02-.3z"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
@@ -421,20 +430,31 @@
             <a href="listings.html">Browse Listings</a>
             <a href="listings.html?type=paid">Paid Internships</a>
             <a href="listings.html?age=hs">High School Students</a>
+            <a href="listings.html?remote=true">Remote Opportunities</a>
           </div>
         </div>
         <div>
-          <h4>For Employers</h4>
+          <h4>Resources</h4>
           <div class="footer-links">
-            <a href="submit.html">Submit a Listing</a>
+            <a href="blog/index.html">Student Blog &amp; Tips</a>
+            <a href="resources.html#work-permit">Work Permit Guide</a>
+            <a href="resources.html#resume">Resume Template</a>
+            <a href="resources.html#interview">Interview Tips</a>
+            <a href="dor.html">DOR Student Services</a>
+          </div>
+        </div>
+        <div>
+          <h4>About</h4>
+          <div class="footer-links">
+            <a href="about.html">Our Story</a>
+            <a href="employers.html">For Employers</a>
             <a href="mailto:hello@internships209.com">Contact Us</a>
-            <a href="resources.html">Student Resources</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Internships209. Built for the 209 community.</p>
-        <p><a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+        <p>© 2026 Internships209. Built for the 209 community. Not affiliated with any government agency.</p>
+        <p>Updated regularly · <a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
       </div>
     </div>
   </footer>

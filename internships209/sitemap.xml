@@ -2,27 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://internships209.com/</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://internships209.com/listings.html</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://internships209.com/resources.html</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://internships209.com/stockton.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/modesto.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/merced.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/employers.html</loc>
+    <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/blog/</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://internships209.com/submit.html</loc>
-    <lastmod>2026-02-27</lastmod>
+    <loc>https://internships209.com/blog/how-to-get-a-work-permit-california.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/blog/best-paid-summer-jobs-teens-stockton-209.html</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/resources.html</loc>
+    <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://internships209.com/dor.html</loc>
@@ -35,5 +71,11 @@
     <lastmod>2026-03-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://internships209.com/submit.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

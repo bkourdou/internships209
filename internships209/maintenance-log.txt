@@ -29,3 +29,69 @@ LISTINGS ADDED:
   - "Inclusive Interaction Lab High School Internship" — UC Merced (id=34); virtual, 12-wk summer, unpaid, high school students in Central Valley
 TOTAL ACTIVE LISTINGS: 34
 ==============================
+=== 2026-03-06 Maintenance Run ===
+SCAN:
+  - JSON-LD validation: All blocks valid across all HTML files (no errors)
+  - Nav consistency: Fixed 2 files — submit.html (desktop nav "For Employers" linked to submit.html instead of employers.html; removed erroneous class="active"); 404.html (both desktop and mobile nav "For Employers" linked to submit.html instead of employers.html; fixed both)
+  - Broken internal references: None found
+  - Listing expiry: id=1 (Y.E.S.S.) deadline is today (2026-03-06, 0 days past); not yet past 7-day grace period — no change. id=8 (Gallo) deadline 2026-03-15 is future — no change. All other listings are Rolling.
+  - Sitemap freshness: Updated lastmod for https://internships209.com/ → 2026-03-06 (index.html stats edited); listings.html → 2026-03-06 (data changed); submit.html → 2026-03-06 (nav fixed)
+  - Stats accuracy: Updated index.html hero stats — Active Listings: 34→37, Partner Organizations: 32→35
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+  - "Food Safety & Quality Assurance Intern" — Dairy Farmers of America (id=35); Turlock CA, paid summer, college junior/senior in Food Science/Biology/Ag Science
+  - "Volunteer Internship Program" — Merced County Probation Department (id=36); Merced CA, unpaid, college students, rolling year-round
+  - "Supply Chain Internship – Operations" — Dot Foods (id=37); Modesto CA, paid $17–$19/hr, college students, summer
+TOTAL ACTIVE LISTINGS: 37
+==============================
+=== 2026-03-07 Maintenance Run ===
+SCAN:
+  - JSON-LD validation: All blocks valid across all HTML files — no errors found
+  - Nav consistency: All 6 core HTML files (index, listings, resources, dor, submit, 404) have consistent nav links in both desktop and mobile menus — no issues found
+  - Broken internal references: Query-string links (listings.html?cat=...) are JS-handled — not broken. Real anchor issue found and fixed: #newsletter anchor missing from index.html newsletter section — added id="newsletter" to the <section> tag, resolving broken links from listings.html and saved.html
+  - Listing expiry: id=1 (Y.E.S.S.) deadline 2026-03-06 is 1 day past — within 7-day grace period, no change. No other listings have past deadlines.
+  - Sitemap freshness: Updated lastmod for https://internships209.com/ → 2026-03-07 (index.html modified)
+  - Stats accuracy: Updated index.html hero stat-listings: 37→38 (after new listing added); Partner Organizations remains 35 (Gallo already in orgs)
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+  - "Viticulture Research Internship 2026" — E. & J. Gallo Winery (id=38); Modesto CA, paid $23–$27.50/hr, college students in life/ag sciences, May–December 2026, deadline 2026-03-31
+TOTAL ACTIVE LISTINGS: 38
+==============================
+=== 2026-03-12 Scheduled Task Run ===
+SCAN:
+  - Listing expiry: id=1 (Y.E.S.S.) deadline 2026-03-06 is 6 days past — within 30-day window, kept. id=8 (Gallo Creative Services) deadline 2026-03-15 is future. id=38 (Gallo Viticulture) deadline 2026-03-31 is future. No removals needed.
+  - Resources page: Reviewed resources.html — AB 323 info current, transit info current, local orgs current. No changes needed.
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+  - "Automation Engineer Intern (Summer 2026)" — Amazon (id=47); Stockton CA, paid $37.27/hr, 10-week summer, engineering students
+  - "Winemaking & Spirits Distillation Internship 2026" — E. & J. Gallo Winery (id=48); Modesto CA, paid $23–$27.50/hr, July–Dec, deadline 2026-03-31
+  - "Chemistry Research and Applications Internship 2026" — E. & J. Gallo Winery (id=49); Modesto CA, paid $23–$27.50/hr, June–Dec, deadline 2026-03-31
+  - "Product Insights & Innovation Internship 2026" — E. & J. Gallo Winery (id=50); Modesto CA, paid $23–$27.50/hr, June–Dec, deadline 2026-03-31
+  - "Affordable Housing Development Internship 2026–2027" — CCRH (id=51); Central Valley, paid $20/hr, 1-year program, deadline 2026-03-27
+  - "Geotechnical Engineering Internship (Summer 2026)" — ENGEO (id=52); Lathrop CA, paid $22–$28/hr, summer, rolling
+  - "Volunteer Legal Internship" — Stanislaus County Public Defender's Office (id=53); Modesto CA, unpaid, law students, rolling
+  - "STEP — Student Training Employment Program" — Stanislaus County Workforce Development (id=54); Modesto CA, paid, ages 16–21, year-round, rolling
+TOTAL ACTIVE LISTINGS: 54 (46 → 54, +8 new)
+==============================
+
+=== 2026-03-12 Maintenance Run ===
+SCAN:
+- JSON-LD: All blocks valid across 13 HTML files
+- Nav: Fixed listings.html desktop nav — added missing "For Employers" link
+- Nav: thanks.html has no .nav-links or .mobile-menu (by design — minimal thank-you page)
+- Internal refs: All valid (query-string links like listings.html?cat=government are handled by JS)
+- Listing expiry: No listings needed deactivation or removal
+- Sitemap: Updated lastmod for listings.html and homepage to 2026-03-12
+- Stats: Updated hero stats from 38→54 active listings, 35→51 partner organizations
+LISTINGS REMOVED (expired): None
+LISTINGS ADDED:
+- Ecological Restoration Summer Internship (River Partners) — Turlock
+- Manufacturing Intern — Stockton (Niagara Bottling) — Stockton
+- Process Technology Scientist Internship 2026 (E. & J. Gallo Winery) — Livingston
+- Winemaking & Spirits Distillation Internship 2026 (E. & J. Gallo Winery) — Modesto
+- Chemistry Research and Applications Internship 2026 (E. & J. Gallo Winery) — Modesto
+- Finance Intern — Modesto (G3 Enterprises) — Modesto
+- Finance Intern III (Joseph Gallo Farms) — Atwater
+- Seasonal Internships (Marketing, Stadium Ops, Community) (Stockton Ports Baseball) — Stockton
+TOTAL ACTIVE LISTINGS: 54
+==============================

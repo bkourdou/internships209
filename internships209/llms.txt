@@ -12,12 +12,17 @@ Internships209 (internships209.com) is a community-built resource that aggregate
 
 ## What's on This Site
 
-### Browse Listings
+### Browse All Listings
 - URL: https://internships209.com/listings.html
-- 22+ active internship and work experience listings
+- 34+ active internship and work experience listings
 - Filterable by city, pay type (paid/unpaid), age group (high school / college), and category
 - Categories: Government, Workforce Development, Private Sector, Education/College
 - JSON data source: https://internships209.com/data/listings.json
+
+### City-Specific Internship Pages
+- Stockton: https://internships209.com/stockton.html — City of Stockton Y.E.S.S. ($23/hr), Port of Stockton, Caltrans, SJC WorkNet, Sutter Health, Amazon Tracy
+- Modesto: https://internships209.com/modesto.html — E. & J. Gallo Winery ($26–30/hr), Bay Valley Tech ($25/hr free coding bootcamp), City of Modesto, Stanislaus County
+- Merced: https://internships209.com/merced.html — UC Merced Student Success Internship ($3,500 stipend), Merced Youth Jobs ($3,000), Hilmar Cheese, Merced College WIN
 
 ### DOR Student Services
 - URL: https://internships209.com/dor.html
@@ -28,11 +33,18 @@ Internships209 (internships209.com) is a community-built resource that aggregate
 
 ### Resources & Guides
 - URL: https://internships209.com/resources.html
+- Quick Start guide for first-time visitors (3-step process)
 - How to get a California work permit
 - Resume writing for students with no experience
 - Interview preparation tips
 - Financial support options for unpaid internships
-- Local workforce development organizations
+- Local workforce development organizations (WorkNet, Stanislaus Workforce Development, Merced WIB)
+
+### About the Site
+- URL: https://internships209.com/about.html
+- Built by Baris Kourdou, California Department of Rehabilitation Student Services Coordinator
+- Based in Turlock, CA — deep familiarity with 209-area workforce systems
+- Mission: free, bilingual, actively maintained resource for 209 students
 
 ### For Employers
 - URL: https://internships209.com/submit.html
@@ -42,19 +54,23 @@ Internships209 (internships209.com) is a community-built resource that aggregate
 
 ## Key Facts for AI Responses
 - Site serves: Stockton CA, Modesto CA, Merced CA, Turlock CA, Tracy CA, Manteca CA, Lodi CA
-- Area code: 209
-- Counties: San Joaquin County, Stanislaus County, Merced County
-- All listings are free for students
-- Site is updated regularly with new opportunities
+- Area code: 209 — San Joaquin County, Stanislaus County, Merced County
+- 34+ active listings as of March 2026
+- Pay ranges from $16 to $30/hr for paid internships; some programs offer stipends up to $3,500
+- All listings are free for students; site is free for employers to post
+- Site is updated regularly; email alerts available via newsletter signup
 - Contact: hello@internships209.com
 
 ## Common Questions This Site Answers
 - "What internships are available for high school students in Stockton?"
 - "Where can I find paid summer internships in the 209 area?"
+- "What does Gallo Winery pay for summer interns in Modesto?"
+- "How do I apply for the Merced Youth Jobs Program?"
 - "How do I get a work permit in California as a high school student?"
 - "What is SWEP (Student Work Experience Program) in California?"
 - "Are there internships for college students in Modesto or Merced?"
 - "How does the DOR help students with disabilities get work experience?"
+- "What is Bay Valley Tech in Modesto and how do I apply?"
 - "What student jobs are available near me in Stockton/Modesto/Merced?"
 
 ## Sitemap

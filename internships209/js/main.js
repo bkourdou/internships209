@@ -25,6 +25,8 @@ const TRANSLATIONS = {
     'Home':                    'Inicio',
     'Browse Listings':         'Ver Oportunidades',
     'Resources':               'Recursos',
+    'DOR Services':            'Servicios DOR',
+    'Blog':                    'Blog',
     'For Employers':           'Para Empleadores',
     'About':                   'Sobre Nosotros',
     'Find an Internship':      'Buscar Pasantías',
@@ -68,8 +70,12 @@ function applyLang() {
   const isES = currentLang === 'es';
   const btn = document.getElementById('langBtn');
   if (btn) {
-    btn.textContent = isES ? 'EN' : 'ES';
-    btn.title = isES ? 'Switch to English' : 'Switch to Spanish';
+    // Per USDS & W3C: show the language NAME in that language (not initials, not flags)
+    // When in English, show "Español" so Spanish speakers can find it immediately
+    // When in Spanish, show "English" so English speakers can find it
+    btn.textContent = isES ? 'English' : 'Español';
+    btn.title = isES ? 'Switch to English' : 'Cambiar a Español';
+    btn.setAttribute('aria-label', isES ? 'Switch to English' : 'Cambiar a Español');
   }
   document.documentElement.lang = isES ? 'es' : 'en';
 
@@ -137,79 +143,132 @@ function catLabel(cat) {
   return map[cat] || cat;
 }
 
+// --- Build countdown badge string ---
+function countdownBadge(deadline) {
+  if (!deadline || deadline === 'Rolling') return '<span class="badge badge-gray">Rolling deadline</span>';
+  const days = daysUntil(deadline);
+  if (days === null) return '';
+  if (days < 0) return '<span class="badge badge-gray" style="text-decoration:line-through;">Deadline passed</span>';
+  if (days === 0) return '<span class="badge badge-orange" style="background:#FEF2F2;color:#B91C1C;border:1px solid #FCA5A5;">🔴 Closes TODAY</span>';
+  if (days === 1) return '<span class="badge badge-orange" style="background:#FEF2F2;color:#B91C1C;border:1px solid #FCA5A5;">🔴 1 day left</span>';
+  if (days <= 7) return `<span class="badge badge-orange" style="background:#FFF7ED;color:#C2410C;border:1px solid #FED7AA;">⚠️ ${days} days left</span>`;
+  if (days <= 14) return `<span class="badge badge-orange">⏰ ${days} days left</span>`;
+  return `<span style="font-size:0.8rem; color:var(--gray-500);">Deadline: ${formatDate(deadline)}</span>`;
+}
+
 // --- Listing card renderer (used on homepage featured) ---
 function renderListingCard(l) {
-  const days = daysUntil(l.deadline);
-  const urgentClass = days !== null && days <= 14 ? 'urgent' : '';
-  const deadlineText = l.deadline === 'Rolling'
-    ? '<span class="badge badge-gray">Rolling deadline</span>'
-    : (days !== null && days <= 14
-      ? `<span class="badge badge-orange">⚠️ Closes ${formatDate(l.deadline)}</span>`
-      : `<span style="font-size:0.8rem; color:var(--gray-500);">Deadline: ${formatDate(l.deadline)}</span>`);
-
+  const isNew = l.dateAdded && (new Date() - _parseLocalDate(l.dateAdded)) < (7 * 24 * 60 * 60 * 1000);
   return `
-    <a href="${l.applyUrl}" target="_blank" rel="noopener noreferrer" class="listing-card" style="text-decoration:none;">
-      <div class="listing-org">${l.org} · ${l.city}</div>
-      <div class="listing-title">${l.title}</div>
-      <div class="listing-meta">
-        ${l.type === 'paid' || l.type === 'mixed'
-          ? '<span class="badge badge-green">💵 Paid</span>'
-          : '<span class="badge badge-gray">Unpaid</span>'}
-        <span class="badge badge-blue">${catLabel(l.category)}</span>
-        ${l.remote ? '<span class="badge badge-gray">🖥 Remote OK</span>' : ''}
-      </div>
-      <div class="listing-desc">${l.description}</div>
-      <div class="listing-footer">
-        ${deadlineText}
-        <span style="font-size:0.82rem; color:var(--blue-700); font-weight:600;">Apply →</span>
-      </div>
-    </a>`;
+    <div class="listing-card-wrap" style="position:relative;">
+      ${_saveBtn(l.id)}
+      <a href="${l.applyUrl}" target="_blank" rel="noopener noreferrer" class="listing-card" style="text-decoration:none;">
+        <div class="listing-org">${l.org} · ${l.city}</div>
+        <div class="listing-title">${l.title}</div>
+        <div class="listing-meta">
+          ${isNew ? '<span class="badge badge-orange">✨ New</span>' : ''}
+          ${l.type === 'paid' || l.type === 'mixed'
+            ? '<span class="badge badge-green">💵 Paid</span>'
+            : '<span class="badge badge-gray">Unpaid</span>'}
+          <span class="badge badge-blue">${catLabel(l.category)}</span>
+          ${l.remote ? '<span class="badge badge-gray">🖥 Remote OK</span>' : ''}
+        </div>
+        <div class="listing-desc">${l.description}</div>
+        <div class="listing-footer">
+          ${countdownBadge(l.deadline)}
+          <span style="font-size:0.82rem; color:var(--blue-700); font-weight:600;">Apply →</span>
+        </div>
+      </a>
+    </div>`;
 }
 
 // --- Full listing card (used on browse/listings page) ---
 function renderListingCardFull(l) {
   const days = daysUntil(l.deadline);
   const isUrgent = days !== null && days <= 14;
-  const urgentClass = isUrgent ? 'urgent' : '';
-  const isNew = l.dateAdded && (new Date() - _parseLocalDate(l.dateAdded)) < (14 * 24 * 60 * 60 * 1000);
-
-  let deadlineText = '';
-  if (l.deadline === 'Rolling') {
-    deadlineText = 'Rolling deadline';
-  } else if (days !== null && days < 0) {
-    deadlineText = 'Deadline passed';
-  } else if (days !== null) {
-    deadlineText = `Deadline: ${formatDate(l.deadline)}${isUrgent ? ' ⚠️' : ''}`;
-  }
+  const isNew = l.dateAdded && (new Date() - _parseLocalDate(l.dateAdded)) < (7 * 24 * 60 * 60 * 1000);
 
   return `
-    <a href="${l.applyUrl}" target="_blank" rel="noopener noreferrer" class="listing-card" style="text-decoration:none;">
-      <div class="listing-org">${l.org} · ${l.city}</div>
-      <div class="listing-title">${l.title}</div>
-      <div class="listing-meta">
-        ${isNew ? '<span class="badge badge-orange">✨ New</span>' : ''}
-        ${l.type === 'paid' || l.type === 'mixed'
-          ? '<span class="badge badge-green">💵 Paid</span>'
-          : '<span class="badge badge-gray">Unpaid</span>'}
-        <span class="badge badge-blue">${catLabel(l.category)}</span>
-        ${l.remote ? '<span class="badge badge-gray">🖥 Remote OK</span>' : ''}
-        ${l.pay    ? `<span class="badge badge-gray">${l.pay}</span>` : ''}
-      </div>
-      <div class="listing-desc">${l.description}</div>
-      <div style="font-size:0.82rem; color:var(--gray-500); margin-bottom:0.85rem;">
-        <strong>Ages:</strong> ${l.ageMin}–${l.ageMax} &nbsp;·&nbsp;
-        <strong>Duration:</strong> ${l.duration} &nbsp;·&nbsp;
-        <strong>Hours:</strong> ${l.hours}
-      </div>
-      <div class="listing-footer">
-        <span class="listing-deadline ${urgentClass}">${deadlineText}</span>
-        <span class="btn btn-primary btn-sm">Apply →</span>
-      </div>
-    </a>`;
+    <div class="listing-card-wrap" style="position:relative;">
+      ${_saveBtn(l.id)}
+      <a href="${l.applyUrl}" target="_blank" rel="noopener noreferrer" class="listing-card${isUrgent ? ' urgent' : ''}" style="text-decoration:none;">
+        <div class="listing-org">${l.org} · ${l.city}</div>
+        <div class="listing-title">${l.title}</div>
+        <div class="listing-meta">
+          ${isNew ? '<span class="badge badge-orange">✨ New</span>' : ''}
+          ${l.type === 'paid' || l.type === 'mixed'
+            ? '<span class="badge badge-green">💵 Paid</span>'
+            : '<span class="badge badge-gray">Unpaid</span>'}
+          <span class="badge badge-blue">${catLabel(l.category)}</span>
+          ${l.remote ? '<span class="badge badge-gray">🖥 Remote OK</span>' : ''}
+          ${l.pay    ? `<span class="badge badge-gray">${l.pay}</span>` : ''}
+        </div>
+        <div class="listing-desc">${l.description}</div>
+        <div style="font-size:0.82rem; color:var(--gray-500); margin-bottom:0.85rem;">
+          <strong>Ages:</strong> ${l.ageMin}–${l.ageMax} &nbsp;·&nbsp;
+          <strong>Duration:</strong> ${l.duration} &nbsp;·&nbsp;
+          <strong>Hours:</strong> ${l.hours}
+        </div>
+        <div class="listing-footer">
+          ${countdownBadge(l.deadline)}
+          <span class="btn btn-primary btn-sm">Apply →</span>
+        </div>
+      </a>
+    </div>`;
+}
+
+// =============================================
+//   Save / Favorites feature (localStorage)
+//   No login required — stored in browser
+// =============================================
+
+function getSaved() {
+  try { return JSON.parse(localStorage.getItem('savedListings') || '[]'); }
+  catch { return []; }
+}
+
+function toggleSave(id, event) {
+  if (event) { event.preventDefault(); event.stopPropagation(); }
+  const saved = getSaved();
+  const idx = saved.indexOf(String(id));
+  if (idx === -1) {
+    saved.push(String(id));
+  } else {
+    saved.splice(idx, 1);
+  }
+  localStorage.setItem('savedListings', JSON.stringify(saved));
+  // Update all save buttons for this id on the page
+  document.querySelectorAll(`.save-btn[data-id="${id}"]`).forEach(btn => {
+    const isSaved = saved.includes(String(id));
+    btn.setAttribute('aria-label', isSaved ? 'Remove from saved' : 'Save listing');
+    btn.title = isSaved ? 'Remove from saved' : 'Save listing';
+    btn.classList.toggle('saved', isSaved);
+    btn.innerHTML = isSaved ? '♥' : '♡';
+  });
+  // Update saved count badge in nav if present
+  _updateSavedBadge();
+}
+
+function isSaved(id) {
+  return getSaved().includes(String(id));
+}
+
+function _updateSavedBadge() {
+  const count = getSaved().length;
+  document.querySelectorAll('.saved-badge').forEach(el => {
+    el.textContent = count > 0 ? count : '';
+    el.style.display = count > 0 ? 'inline-flex' : 'none';
+  });
+}
+
+function _saveBtn(id) {
+  const saved = isSaved(id);
+  return `<button class="save-btn${saved ? ' saved' : ''}" data-id="${id}" onclick="toggleSave('${id}', event)" aria-label="${saved ? 'Remove from saved' : 'Save listing'}" title="${saved ? 'Remove from saved' : 'Save listing'}">${saved ? '♥' : '♡'}</button>`;
 }
 
 // --- Smooth scroll for anchor links (with reliable nav offset) ---
 document.addEventListener('DOMContentLoaded', () => {
+  _updateSavedBadge();
   applyLang(); // restore saved language on page load
 
   // Initialize aria-expanded on mobile toggle button

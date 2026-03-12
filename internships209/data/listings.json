@@ -16,8 +16,8 @@
     "description": "Gain hands-on experience working in City of Stockton departments including Public Works, IT, HR, Economic Development, and more. 100 paid spots for local youth.",
     "requirements": [
       "Must live in Stockton city limits",
-      "Ages 16–19",
-      "Work permit required if 16–17",
+      "Ages 16\u201319",
+      "Work permit required if 16\u201317",
       "Livescan background check"
     ],
     "applyUrl": "https://www.stocktonca.gov/government/employment/internships/student_worker_program.php",
@@ -132,7 +132,7 @@
     "deadline": "Rolling",
     "description": "Comprehensive career guidance, job readiness training, and paid work experience placements for youth facing barriers to employment. Locations in Stockton, Lodi, Manteca, and Tracy.",
     "requirements": [
-      "Ages 16–24",
+      "Ages 16\u201324",
       "Resident of San Joaquin County",
       "Must face employment barriers (low-income, foster youth, etc.)"
     ],
@@ -163,7 +163,7 @@
     "deadline": "Rolling",
     "description": "Employment and training services including career guidance, job placement, and paid work experience for in- and out-of-school youth in San Joaquin County.",
     "requirements": [
-      "Ages 16–24",
+      "Ages 16\u201324",
       "San Joaquin County resident",
       "In-school or out-of-school youth eligible",
       "WIOA eligibility required"
@@ -186,7 +186,7 @@
     "category": "government",
     "ageMin": 18,
     "ageMax": 26,
-    "pay": "$16.50 – $20.07/hr",
+    "pay": "$16.50 \u2013 $20.07/hr",
     "hours": "Part-time",
     "duration": "Semester-based",
     "remote": false,
@@ -194,7 +194,7 @@
     "description": "College students gain professional experience across Stanislaus County departments including health services, planning, HR, behavioral health, and public works.",
     "requirements": [
       "Currently enrolled college/university student",
-      "Available to work 15–20 hrs/week",
+      "Available to work 15\u201320 hrs/week",
       "GPA requirement varies by dept"
     ],
     "applyUrl": "https://www.stancounty.com/hr/student-internship",
@@ -216,7 +216,7 @@
     "ageMax": 26,
     "pay": "Competitive hourly",
     "hours": "Full-time (summer)",
-    "duration": "10–12 weeks (Summer 2026)",
+    "duration": "10\u201312 weeks (Summer 2026)",
     "remote": false,
     "deadline": "2026-03-15",
     "description": "Work in Gallo's Creative Services team on brand design, marketing materials, and digital content for one of the world's largest wine producers, headquartered in Modesto.",
@@ -328,7 +328,7 @@
   },
   {
     "id": "12",
-    "title": "STEP Program — Students with Disabilities Work Experience",
+    "title": "STEP Program \u2014 Students with Disabilities Work Experience",
     "org": "SJC WorkNet / Department of Rehabilitation",
     "city": "Multiple (SJ County)",
     "type": "paid",
@@ -340,9 +340,9 @@
     "duration": "Semester or year-round",
     "remote": false,
     "deadline": "Rolling",
-    "description": "The Student Transition and Employment Program (STEP) provides paid work readiness and on-the-job experience for students with disabilities aged 16–21 who have an active IEP or 504 plan.",
+    "description": "The Student Transition and Employment Program (STEP) provides paid work readiness and on-the-job experience for students with disabilities aged 16\u201321 who have an active IEP or 504 plan.",
     "requirements": [
-      "Ages 16–21",
+      "Ages 16\u201321",
       "Active IEP or 504 plan",
       "Enrolled in school in SJ County",
       "Referred by school or DOR"
@@ -455,9 +455,9 @@
     "duration": "Up to 200 hours",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Connects youth ages 16–24 to part-time employment, work readiness training, and a personal mentor. Participants earn up to $3,000 through 200 hours of paid work experience with local Merced-area employers.",
+    "description": "Connects youth ages 16\u201324 to part-time employment, work readiness training, and a personal mentor. Participants earn up to $3,000 through 200 hours of paid work experience with local Merced-area employers.",
     "requirements": [
-      "Ages 16–24",
+      "Ages 16\u201324",
       "Resident of City of Merced"
     ],
     "applyUrl": "https://mercedyouthjobs.com/",
@@ -512,9 +512,9 @@
     "duration": "Summer",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Stanislaus County Workforce Development Board acts as employer of record — covering wages, taxes, and workers' compensation — while placing youth in summer jobs across the county. Includes pre-employment training.",
+    "description": "Stanislaus County Workforce Development Board acts as employer of record \u2014 covering wages, taxes, and workers' compensation \u2014 while placing youth in summer jobs across the county. Includes pre-employment training.",
     "requirements": [
-      "Ages 16–24",
+      "Ages 16\u201324",
       "Stanislaus County resident"
     ],
     "applyUrl": "https://www.stanworkforce.com/youth/summer-youth/",
@@ -559,21 +559,21 @@
   {
     "id": "20",
     "title": "Student Internship Program",
-    "org": "CA Dept. of Food & Agriculture — Modesto Office",
+    "org": "CA Dept. of Food & Agriculture \u2014 Modesto Office",
     "city": "Modesto",
     "type": "paid",
     "category": "government",
     "ageMin": 18,
     "ageMax": 26,
     "pay": "Paid (hourly)",
-    "hours": "8–30 hrs/week",
-    "duration": "10–16 weeks",
+    "hours": "8\u201330 hrs/week",
+    "duration": "10\u201316 weeks",
     "remote": false,
     "deadline": "Rolling",
-    "description": "CDFA's Modesto field office offers flexible, year-round internships for college students to learn how California regulates agriculture and food systems. Open to all majors — not just agriculture students.",
+    "description": "CDFA's Modesto field office offers flexible, year-round internships for college students to learn how California regulates agriculture and food systems. Open to all majors \u2014 not just agriculture students.",
     "requirements": [
       "Currently enrolled college student",
-      "8–30 hours/week availability"
+      "8\u201330 hours/week availability"
     ],
     "applyUrl": "https://www.cdfa.ca.gov/internships/",
     "tags": [
@@ -587,7 +587,7 @@
   {
     "id": "21",
     "title": "Clinical Education Internship",
-    "org": "Sutter Health — Central Valley",
+    "org": "Sutter Health \u2014 Central Valley",
     "city": "Stockton",
     "type": "paid",
     "category": "private",
@@ -625,7 +625,7 @@
     "ageMax": 26,
     "pay": "Paid (stipend)",
     "hours": "Full-time",
-    "duration": "8 weeks (June 15 – August 7, 2026)",
+    "duration": "8 weeks (June 15 \u2013 August 7, 2026)",
     "remote": false,
     "deadline": "Rolling",
     "description": "UC Merced's Community and Labor Center places students with unions, worker centers, and community organizations for a paid 8-week summer internship focused on labor and community organizing in the Central Valley.",
@@ -645,7 +645,7 @@
   {
     "id": "23",
     "title": "IT Internship Program",
-    "org": "City of Stockton — Information Technology",
+    "org": "City of Stockton \u2014 Information Technology",
     "city": "Stockton",
     "type": "paid",
     "category": "government",
@@ -686,7 +686,7 @@
     "duration": "Semester or summer",
     "remote": false,
     "deadline": "Rolling",
-    "description": "The SJ County District Attorney's Office is accepting volunteer internship applications for Summer 2026 and beyond from pre-law college students and law students (1L–4L). Interns gain exposure to prosecution, legal writing, and the criminal justice process working alongside deputy district attorneys.",
+    "description": "The SJ County District Attorney's Office is accepting volunteer internship applications for Summer 2026 and beyond from pre-law college students and law students (1L\u20134L). Interns gain exposure to prosecution, legal writing, and the criminal justice process working alongside deputy district attorneys.",
     "requirements": [
       "Enrolled at a two- or four-year college or university (pre-law), OR currently in law school",
       "Submit resume and cover letter to applications@sjcda.org",
@@ -747,9 +747,9 @@
     "duration": "~28 weeks (after 4-month free training)",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Bay Valley Tech offers a free 4-month coding bootcamp in Modesto followed by a 28-week paid tech internship at $25/hr. No prior coding experience required. Open to ages 16–30 in Stanislaus County (commuters considered). Funded by grants from education, government, and corporate partners.",
+    "description": "Bay Valley Tech offers a free 4-month coding bootcamp in Modesto followed by a 28-week paid tech internship at $25/hr. No prior coding experience required. Open to ages 16\u201330 in Stanislaus County (commuters considered). Funded by grants from education, government, and corporate partners.",
     "requirements": [
-      "Ages 16–30 in Stanislaus County (or willing to commute to Modesto)",
+      "Ages 16\u201330 in Stanislaus County (or willing to commute to Modesto)",
       "No prior coding experience required",
       "Income limits may apply for those outside age range"
     ],
@@ -775,15 +775,15 @@
     "category": "government",
     "ageMin": 18,
     "ageMax": 26,
-    "pay": "$18 – $20/hr",
-    "hours": "20–40 hrs/week",
+    "pay": "$18 \u2013 $20/hr",
+    "hours": "20\u201340 hrs/week",
     "duration": "Spring/Summer 2026 (with possible extension)",
     "remote": false,
     "deadline": "Rolling",
     "description": "Turlock Irrigation District (TID) offers paid 2026 student internships across multiple departments including Communications/Marketing, IT Services, Electrical Engineering, Civil/Geotechnical Engineering, and GIS. Interns work on real utility projects alongside seasoned professionals at one of California's largest irrigation districts.",
     "requirements": [
       "Active college student or recent graduate",
-      "GPA of 2.0–3.0 or better (varies by role)",
+      "GPA of 2.0\u20133.0 or better (varies by role)",
       "Submit resume and cover letter",
       "Relevant field of study preferred"
     ],
@@ -802,7 +802,7 @@
   {
     "id": "28",
     "title": "District Office Intern",
-    "org": "CA State Senate — Office of Senator McNerney",
+    "org": "CA State Senate \u2014 Office of Senator McNerney",
     "city": "Stockton",
     "type": "paid",
     "category": "government",
@@ -813,7 +813,7 @@
     "duration": "Up to 6 months",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Senator Jerry McNerney’s Stockton district office accepts paid intern applications on a rolling basis. Interns assist with constituent services, public outreach, and general office duties. A great entry point into California state government for students interested in public policy or law.",
+    "description": "Senator Jerry McNerney\u2019s Stockton district office accepts paid intern applications on a rolling basis. Interns assist with constituent services, public outreach, and general office duties. A great entry point into California state government for students interested in public policy or law.",
     "requirements": [
       "Cover letter and resume required",
       "Senate employment application required",
@@ -843,9 +843,9 @@
     "duration": "10 weeks (Summer 2026)",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Amazon’s summer internship at their Tracy fulfillment center. Interns learn to manage teams of 50–100 associates, lead a real process-improvement project, and gain hands-on operations experience. Strong pathway to a full-time Area Manager role with one of the world’s largest employers. Relocation/housing assistance provided.",
+    "description": "Amazon\u2019s summer internship at their Tracy fulfillment center. Interns learn to manage teams of 50\u2013100 associates, lead a real process-improvement project, and gain hands-on operations experience. Strong pathway to a full-time Area Manager role with one of the world\u2019s largest employers. Relocation/housing assistance provided.",
     "requirements": [
-      "Currently enrolled in a Bachelor’s program (Supply Chain, Business, Engineering, or related preferred)",
+      "Currently enrolled in a Bachelor\u2019s program (Supply Chain, Business, Engineering, or related preferred)",
       "Expected graduation between December 2026 and August 2027",
       "Work authorization without employer sponsorship required"
     ],
@@ -868,14 +868,14 @@
     "category": "private",
     "ageMin": 18,
     "ageMax": 26,
-    "pay": "$26 – $30/hr",
+    "pay": "$26 \u2013 $30/hr",
     "hours": "Full-time (summer)",
     "duration": "Summer 2026",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Gallo’s award-winning IT department in Modesto is recruiting summer 2026 program analyst interns. Interns collaborate cross-functionally with Marketing, Sales, Finance, Manufacturing, and R&D teams, gaining exposure to enterprise technology at one of the world’s largest wine producers.",
+    "description": "Gallo\u2019s award-winning IT department in Modesto is recruiting summer 2026 program analyst interns. Interns collaborate cross-functionally with Marketing, Sales, Finance, Manufacturing, and R&D teams, gaining exposure to enterprise technology at one of the world\u2019s largest wine producers.",
     "requirements": [
-      "Pursuing a Bachelor’s or Master’s in Computer Science, MIS, Data Science, Statistics, Economics, or related field",
+      "Pursuing a Bachelor\u2019s or Master\u2019s in Computer Science, MIS, Data Science, Statistics, Economics, or related field",
       "Expected graduation between December 2026 and June 2028",
       "Programming skills (Python, Java, or C++) preferred"
     ],
@@ -891,7 +891,7 @@
   },
   {
     "id": "31",
-    "title": "IT Support Internship — Summer 2026",
+    "title": "IT Support Internship \u2014 Summer 2026",
     "org": "Harbor Foods",
     "city": "Modesto",
     "type": "paid",
@@ -965,7 +965,7 @@
     "duration": "Semester or Summer",
     "remote": false,
     "deadline": "Rolling",
-    "description": "Work part-time in a California State Assembly or Senate office in the San Joaquin Valley — including Stockton, Modesto, Merced, and Fresno districts. Students gain hands-on experience in policy research, constituent services, and legislative process. $2,500 stipend paid upon completion. Open to students at CSU Stanislaus, UC Merced, Fresno State, and CSU Bakersfield.",
+    "description": "Work part-time in a California State Assembly or Senate office in the San Joaquin Valley \u2014 including Stockton, Modesto, Merced, and Fresno districts. Students gain hands-on experience in policy research, constituent services, and legislative process. $2,500 stipend paid upon completion. Open to students at CSU Stanislaus, UC Merced, Fresno State, and CSU Bakersfield.",
     "requirements": [
       "Enrolled at CSU Stanislaus, UC Merced, Fresno State, or CSU Bakersfield",
       "Junior or Senior standing preferred",
@@ -985,13 +985,13 @@
   {
     "id": "34",
     "title": "Inclusive Interaction Lab High School Internship",
-    "org": "UC Merced — Inclusive Interaction Lab",
+    "org": "UC Merced \u2014 Inclusive Interaction Lab",
     "city": "Merced",
     "type": "unpaid",
     "category": "education",
     "ageMin": 14,
     "ageMax": 18,
-    "pay": null,
+    "pay": "Unpaid",
     "hours": "20 hrs/week",
     "duration": "12 weeks (Summer)",
     "remote": true,
@@ -1013,6 +1013,862 @@
       "research"
     ],
     "dateAdded": "2026-03-03",
+    "active": true
+  },
+  {
+    "id": "35",
+    "title": "Food Safety & Quality Assurance Intern",
+    "org": "Dairy Farmers of America",
+    "city": "Turlock",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 19,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time (Summer)",
+    "duration": "~10 weeks (Summer 2026)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Gain hands-on experience in the laboratory and production areas of DFA's Turlock cheese and whey plant. Interns perform chemical and microbiological testing of finished products, assist with food safety programs including HACCP and sanitation, and write or revise Standard Operating Procedures.",
+    "requirements": [
+      "College junior or senior status",
+      "Pursuing degree in Food Science, Biology, or Agricultural Science",
+      "Interest in dairy/food manufacturing"
+    ],
+    "applyUrl": "https://careers.dfamilk.com/posting/summer-2026-food-safety-quality-assurance-intern/33177/",
+    "tags": [
+      "paid",
+      "private",
+      "food-science",
+      "summer",
+      "college"
+    ],
+    "dateAdded": "2026-03-06",
+    "active": true
+  },
+  {
+    "id": "36",
+    "title": "Volunteer Internship Program",
+    "org": "Merced County Probation Department",
+    "city": "Merced",
+    "type": "unpaid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 99,
+    "pay": null,
+    "hours": "Varies (minimum hours required)",
+    "duration": "Semester-based",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Structured volunteer work experience in community corrections with the Merced County Probation Department. Interns are assigned to units in the Adult and Juvenile Divisions, completing an orientation period before reporting to their placement. Ideal for students studying criminology, social work, or public administration.",
+    "requirements": [
+      "Currently enrolled at a college or university",
+      "Complete internship and background applications",
+      "Attend departmental orientation and training"
+    ],
+    "applyUrl": "https://www.countyofmerced.com/3521/Internship-Program",
+    "tags": [
+      "unpaid",
+      "government",
+      "criminal-justice",
+      "college",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-06",
+    "active": true
+  },
+  {
+    "id": "37",
+    "title": "Supply Chain Internship \u2013 Operations",
+    "org": "Dot Foods",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": "$17\u2013$19/hr",
+    "hours": "Minimum 350 hours total (Summer)",
+    "duration": "~10\u201312 weeks (Summer 2026)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Join Dot Foods' Modesto distribution center for a paid summer internship in supply chain operations. Interns gain real-world experience in logistics, warehouse operations, and process improvement while building professional skills and industry connections.",
+    "requirements": [
+      "Working toward a Bachelor's degree in Supply Chain, Logistics, Operations Management, or related business field",
+      "Strong communication and interpersonal skills",
+      "Ability to work minimum 350 hours during internship tenure"
+    ],
+    "applyUrl": "https://careers.dotfoods.com/jobs-and-careers/internships/",
+    "tags": [
+      "paid",
+      "private",
+      "supply-chain",
+      "summer",
+      "college"
+    ],
+    "dateAdded": "2026-03-06",
+    "active": true
+  },
+  {
+    "id": "38",
+    "title": "Viticulture Research Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 28,
+    "pay": "$23 \u2013 $27.50/hr",
+    "hours": "Full-time during program",
+    "duration": "8 months (May\u2013December 2026)",
+    "remote": false,
+    "deadline": "2026-03-31",
+    "description": "Support Gallo's viticulture research team in characterizing grapevine phenotypic traits including bud fruitfulness, cluster architecture, berry color, and canopy structure. Interns collect field data, tissue samples for genetic analysis, and fruit samples for maturity and compositional analyses at Gallo's Modesto-area ranch locations.",
+    "requirements": [
+      "Enrolled in or completed a Bachelor's or Master's degree in Life Sciences, Agricultural Sciences, or Engineering (Ag Business also accepted)",
+      "Available for full internship duration (May\u2013December)",
+      "Valid California driver's license and reliable vehicle",
+      "Social sciences degrees (psychology, sociology, etc.) not eligible"
+    ],
+    "applyUrl": "https://gallocareers.com/job/viticulture-research-internship-2026-may-december/modesto-CA/",
+    "tags": [
+      "paid",
+      "private",
+      "college",
+      "agriculture",
+      "research",
+      "modesto"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "39",
+    "title": "Cooperative Work Experience Education (CWEE)",
+    "org": "Modesto Junior College",
+    "city": "Modesto",
+    "type": "mixed",
+    "category": "education",
+    "ageMin": 16,
+    "ageMax": 25,
+    "pay": "Paid by employer (varies)",
+    "hours": "15\u201340 hrs/week",
+    "duration": "Semester-based",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "MJC\u2019s Cooperative Work Experience program lets students earn college credit while gaining paid or unpaid work experience in their field of study. The CWEE coordinator connects students with Stanislaus County employers across healthcare, business, tech, and public service. All majors welcome.",
+    "requirements": [
+      "Enrolled MJC student (at least 6 units)",
+      "Have a job or internship related to your major, or work with CWEE to find one",
+      "Complete a learning objectives agreement with your employer"
+    ],
+    "applyUrl": "https://www.mjc.edu/instruction/careertechnicaleducation/cwee/index.php",
+    "tags": [
+      "paid",
+      "unpaid",
+      "education",
+      "college",
+      "credit",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "40",
+    "title": "College Internship Program \u2014 Operations & Engineering",
+    "org": "Foster Farms",
+    "city": "Livingston",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Competitive (paid)",
+    "hours": "Full-time (Summer)",
+    "duration": "10\u201312 weeks (Summer 2026)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Foster Farms, one of the West Coast\u2019s largest poultry processors with major operations in Livingston (Merced County), offers paid summer internships in food processing operations, quality assurance, engineering, and supply chain. Interns work on real plant-floor projects and gain exposure to large-scale food manufacturing.",
+    "requirements": [
+      "Pursuing a Bachelor\u2019s in Food Science, Agricultural Engineering, Mechanical or Industrial Engineering, or related field",
+      "Junior or Senior standing preferred",
+      "Reliable transportation to Livingston facility"
+    ],
+    "applyUrl": "https://www.fosterfarms.com/company/careers/",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "college",
+      "food-science",
+      "engineering"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "41",
+    "title": "Student Internship \u2014 Environmental & Planning",
+    "org": "San Joaquin Valley Air Pollution Control District",
+    "city": "Multiple (SJ/Stanislaus/Merced Counties)",
+    "type": "paid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Paid (hourly, competitive)",
+    "hours": "Part-time (15\u201320 hrs/week)",
+    "duration": "Semester or Summer",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "The San Joaquin Valley Air Pollution Control District \u2014 regulating air quality across eight Central Valley counties \u2014 offers paid student internships in environmental science, public health, engineering, and community outreach. Interns assist with permit reviews, air monitoring, and regulatory compliance projects.",
+    "requirements": [
+      "Enrolled college student in Environmental Science, Public Health, Engineering, or Policy",
+      "Must reside or study in the San Joaquin Valley region",
+      "Strong written communication skills"
+    ],
+    "applyUrl": "https://www.valleyair.org/general_info/employment.htm",
+    "tags": [
+      "paid",
+      "government",
+      "college",
+      "environmental",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "42",
+    "title": "Student Assistant \u2014 Delta Operations",
+    "org": "CA Department of Water Resources",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Paid (state civil service student rate)",
+    "hours": "Part-time",
+    "duration": "Year-round",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "The CA Department of Water Resources\u2019 Stockton office oversees Sacramento\u2013San Joaquin Delta water management and periodically hires Student Assistants for work in environmental science, hydrology, engineering, data analysis, and administration. A strong pathway into state water policy careers.",
+    "requirements": [
+      "Currently enrolled at a California college or university",
+      "Pursuing degree in Environmental Science, Civil Engineering, Hydrology, or related field",
+      "Apply through CalCareers (CA state jobs system)"
+    ],
+    "applyUrl": "https://www.calcareers.ca.gov/",
+    "tags": [
+      "paid",
+      "government",
+      "college",
+      "environmental",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "43",
+    "title": "Medical Assistant Externship",
+    "org": "Sutter Gould Medical Foundation",
+    "city": "Modesto",
+    "type": "unpaid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Unpaid (clinical externship)",
+    "hours": "Varies (part-time)",
+    "duration": "Semester-based",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Sutter Gould Medical Foundation \u2014 one of Stanislaus County\u2019s largest medical groups \u2014 accepts Medical Assistant and clinical externship students from accredited programs. Externs rotate through primary care, specialty, and urgent care clinics in the Modesto area, applying classroom skills in a real clinical setting.",
+    "requirements": [
+      "Enrolled in an accredited Medical Assistant or healthcare program",
+      "Program coordinator must initiate clinical placement",
+      "Background check and health screening required"
+    ],
+    "applyUrl": "https://www.sutterhealth.org/gould",
+    "tags": [
+      "unpaid",
+      "private",
+      "college",
+      "healthcare",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "44",
+    "title": "Student Intern \u2014 Education Programs",
+    "org": "Stanislaus County Office of Education (SCOE)",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Paid (hourly)",
+    "hours": "Part-time (15\u201320 hrs/week)",
+    "duration": "Semester or year-round",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "SCOE \u2014 the regional education agency serving all Stanislaus County school districts \u2014 hires student interns in education, counseling, social services, HR, communications, and technology. Interns contribute to programs supporting K-12 students across the county.",
+    "requirements": [
+      "Enrolled at a college or university",
+      "Pursuing degree in Education, Social Work, Psychology, Business, or related field",
+      "Available 15\u201320 hrs/week"
+    ],
+    "applyUrl": "https://www.stancoe.org/jobs",
+    "tags": [
+      "paid",
+      "government",
+      "college",
+      "education",
+      "year-round"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "45",
+    "title": "Youth Development Internship",
+    "org": "Central Valley YMCA",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "workforce",
+    "ageMin": 16,
+    "ageMax": 24,
+    "pay": "Paid (hourly)",
+    "hours": "Part-time (10\u201325 hrs/week)",
+    "duration": "Semester or Summer",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "The YMCA of San Joaquin County offers paid internships and program leader roles for young adults interested in youth development, after-school programming, aquatics, and community health. Interns gain supervised leadership experience while supporting programs serving thousands of Stockton-area youth annually.",
+    "requirements": [
+      "Ages 16\u201324",
+      "Interest in working with youth and a positive attitude",
+      "CPR/First Aid certification (can be obtained after hire)",
+      "Background check required"
+    ],
+    "applyUrl": "https://www.ymca.org/find-your-y/",
+    "tags": [
+      "paid",
+      "workforce-development",
+      "year-round",
+      "high-school",
+      "college"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "46",
+    "title": "Nonprofit Work Experience Program",
+    "org": "Goodwill Central Valley",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "workforce",
+    "ageMin": 16,
+    "ageMax": 24,
+    "pay": "Paid (wages)",
+    "hours": "Part-time",
+    "duration": "Up to 6 months",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Goodwill Central Valley \u2014 with locations across Modesto, Stockton, and the region \u2014 provides subsidized work experience and career training for youth through WIOA-funded workforce programs. Participants gain skills in retail, logistics, customer service, or nonprofit operations, with a pathway to full-time employment.",
+    "requirements": [
+      "Ages 16\u201324",
+      "Income or employment barrier eligibility (WIOA requirements)",
+      "Stanislaus or San Joaquin County resident"
+    ],
+    "applyUrl": "https://www.goodwillcentralvalley.org/",
+    "tags": [
+      "paid",
+      "workforce-development",
+      "training",
+      "year-round",
+      "high-school",
+      "college"
+    ],
+    "dateAdded": "2026-03-07",
+    "active": true
+  },
+  {
+    "id": "47",
+    "title": "Automation Engineer Intern (Summer 2026)",
+    "org": "Amazon",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$37.27/hr",
+    "hours": "40 hrs/week (4-day shifts, up to 12 hrs)",
+    "duration": "10 weeks (Summer 2026)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Hands-on experience in Amazon fulfillment center automation. Learn to maintain and troubleshoot material handling control systems including PLC/PC controllers, industrial networks, motor control systems, and servo drives. Includes an intern project focused on continuous improvement.",
+    "requirements": [
+      "Currently enrolled in bachelor's degree program (graduating Dec 2026\u2013Aug 2027)",
+      "Interest in automation, electrical, or mechanical engineering",
+      "Able to stand/walk for 12-hour shifts and lift up to 49 lbs"
+    ],
+    "applyUrl": "https://www.amazon.jobs/en/jobs/3180154/automation-engineer-intern-summer-2026",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "engineering",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "48",
+    "title": "Winemaking & Spirits Distillation Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$23.00\u2013$27.50/hr",
+    "hours": "Full-time",
+    "duration": "July\u2013December 2026",
+    "remote": false,
+    "deadline": "2026-03-31",
+    "description": "Assist with production winemaking at commercial scale or small-lot research production. Spirits distillation interns work with brandy, whiskey, rum, flavored vodkas, hard seltzers, and other spirits. Gain hands-on experience in one of the world's largest wineries.",
+    "requirements": [
+      "Enrolled in relevant degree program (enology, food science, chemistry, or related)",
+      "Interest in winemaking or spirits production"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Modesto-Winemaking-&-Spirits-Distillation-Internship-2026-July-December-CA-95354/1323622300/",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "science",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "49",
+    "title": "Chemistry Research and Applications Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$23.00\u2013$27.50/hr",
+    "hours": "Full-time",
+    "duration": "June\u2013December 2026",
+    "remote": false,
+    "deadline": "2026-03-31",
+    "description": "Research internship focused on chemistry applications in the wine and spirits industry. Work alongside experienced scientists on analytical chemistry, quality assurance, and product development projects.",
+    "requirements": [
+      "Enrolled in chemistry, biochemistry, or related science degree program",
+      "Lab experience preferred"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Modesto-Chemistry-Research-and-Applications-Internship-2026-CA-95354/1323621300/",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "science",
+      "research",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "50",
+    "title": "Product Insights & Innovation Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$23.00\u2013$27.50/hr",
+    "hours": "Full-time",
+    "duration": "June\u2013December 2026",
+    "remote": false,
+    "deadline": "2026-03-31",
+    "description": "Work on product innovation and consumer insights projects at Gallo. Gain cross-functional exposure to Marketing, Sales, Finance, Manufacturing, Winemaking, and R&D teams while contributing to real product development initiatives.",
+    "requirements": [
+      "Enrolled in business, marketing, food science, or related degree program",
+      "Strong analytical and communication skills"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Modesto-Product-Insights-&-Innovation-Internship-2026-June-December-CA-95354/1324080300/",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "business",
+      "research",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "51",
+    "title": "Affordable Housing Development Internship 2026\u20132027",
+    "org": "California Coalition for Rural Housing (CCRH)",
+    "city": "Central Valley (various locations)",
+    "type": "paid",
+    "category": "education",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$20.00/hr",
+    "hours": "Full-time summer (40 hrs/week), part-time fall/spring (16\u201320 hrs/week)",
+    "duration": "1 year (June 2026\u2013May 2027)",
+    "remote": false,
+    "deadline": "2026-03-27",
+    "description": "One-year paid internship working alongside experienced real estate development teams to help plan, finance, and build affordable rental housing in rural California communities. Gain insight into the full life cycle of housing development from predevelopment to completion.",
+    "requirements": [
+      "College junior or senior (or recent graduate)",
+      "Interest in affordable housing, community development, or public policy",
+      "Able to commit to full-time summer and part-time academic year schedule"
+    ],
+    "applyUrl": "https://www.calruralhousing.org/join-ccrh-internship-program",
+    "tags": [
+      "paid",
+      "education",
+      "summer",
+      "year-round",
+      "college",
+      "nonprofit"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "52",
+    "title": "Geotechnical Engineering Internship (Summer 2026)",
+    "org": "ENGEO",
+    "city": "Lathrop",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "$22.00\u2013$28.00/hr",
+    "hours": "Full-time (Summer)",
+    "duration": "Summer 2026",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Comprehensive summer internship exploring geotechnical, geoenvironmental, hydrologic and geologic engineering consulting. Gain exposure to office, laboratory, and field experience in professional technical consulting at ENGEO's Lathrop office near Stockton.",
+    "requirements": [
+      "Senior standing in civil engineering (preferred) or have completed soils introduction course",
+      "Interest in geotechnical, environmental, or water resources engineering",
+      "Valid driver's license"
+    ],
+    "applyUrl": "https://www.engeo.com/careers/grads-and-interns/",
+    "tags": [
+      "paid",
+      "private",
+      "summer",
+      "engineering",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "53",
+    "title": "Volunteer Legal Internship",
+    "org": "Stanislaus County Public Defender's Office",
+    "city": "Modesto",
+    "type": "unpaid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 30,
+    "pay": "Unpaid (volunteer)",
+    "hours": "Flexible",
+    "duration": "Flexible",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Individually structured volunteer internship at the Stanislaus County Public Defender's Office. Gain hands-on criminal defense experience including courtroom observation, legal research, and client interaction. Excellent preparation for aspiring trial attorneys.",
+    "requirements": [
+      "Current law school student or recent law school graduate",
+      "Interest in criminal defense and public interest law",
+      "Email resume and cover letter to bitor@stancounty.com"
+    ],
+    "applyUrl": "https://www.stancounty.com/publicdefender/internship-program.shtm",
+    "tags": [
+      "unpaid",
+      "government",
+      "year-round",
+      "law",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "54",
+    "title": "STEP \u2014 Student Training Employment Program",
+    "org": "Stanislaus County Workforce Development",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "workforce",
+    "ageMin": 16,
+    "ageMax": 21,
+    "pay": "Varies (paid work experience)",
+    "hours": "Part-time, varies",
+    "duration": "Varies",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Year-round program matching motivated young people ages 16\u201321 with paid work experience and job readiness training. Includes resume building, interview skills, and placement with local employers. Separate from the summer-only youth program.",
+    "requirements": [
+      "Ages 16\u201321",
+      "Resident of Stanislaus County",
+      "Must meet eligibility requirements through Stanislaus County Workforce Development"
+    ],
+    "applyUrl": "https://www.stanworkforce.com/youth/",
+    "tags": [
+      "paid",
+      "workforce",
+      "year-round",
+      "high-school",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "55",
+    "title": "Ecological Restoration Summer Internship",
+    "org": "River Partners",
+    "city": "Turlock",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time (Summer)",
+    "duration": "10\u201312 weeks (Summer)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Assist with habitat restoration projects on the San Joaquin River. Interns collect and analyze plant and wildlife data, perform data entry, and complete a self-directed research project on riparian restoration.",
+    "requirements": [
+      "Pursuing degree in biology, natural resources, or related field",
+      "Valid driver's license",
+      "Ability to work outdoors in temperatures exceeding 90\u00b0F"
+    ],
+    "applyUrl": "https://jobs.smartrecruiters.com/RiverPartners/743999709120512-ecological-restoration-summer-internship",
+    "tags": [
+      "environment",
+      "ecology",
+      "outdoors",
+      "research"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "56",
+    "title": "Manufacturing Intern \u2014 Stockton",
+    "org": "Niagara Bottling",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time",
+    "duration": "10\u201312 weeks (Summer)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Work in a fast-paced manufacturing environment at Niagara Bottling's Stockton plant. Interns apply continuous improvement methodologies and tackle hands-on projects in bottling operations.",
+    "requirements": [
+      "Currently enrolled college student",
+      "Interest in manufacturing or engineering",
+      "U.S. work authorization"
+    ],
+    "applyUrl": "https://careers.niagarawater.com/us/en/job/R50541/Manufacturing-Intern-Stockton",
+    "tags": [
+      "manufacturing",
+      "engineering",
+      "operations"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "57",
+    "title": "Process Technology Scientist Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Livingston",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": "$27.00/hr",
+    "hours": "Full-time",
+    "duration": "5\u20136 months",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Assist in all aspects of small-lot wine production at Livingston research wineries. Work hands-on from grape crush to bottling, gaining experience producing white, red, sparkling, and dessert wines.",
+    "requirements": [
+      "Junior or Senior standing",
+      "Pursuing BS in Chemistry, Food Science, Biochemistry, Biology, or Microbiology",
+      "Strong analytical and problem-solving skills"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Livingston-Process-Technology-Scientist-Internship-2026-CA-95334/1346703100/",
+    "tags": [
+      "science",
+      "food-science",
+      "chemistry",
+      "winemaking"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "58",
+    "title": "Winemaking & Spirits Distillation Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time",
+    "duration": "6 months (Jul\u2013Dec 2026)",
+    "remote": false,
+    "deadline": "2026-03-31",
+    "description": "Assist with production winemaking at commercial scale or spirits distillation (brandy, whiskey, rum, vodka) at Gallo facilities. Three tracks available: Commercial Winemaking, Research Winemaking, and Spirits Distillation.",
+    "requirements": [
+      "Junior or Senior standing or graduate student",
+      "Pursuing degree in Enology, Food Science, Chemistry, or related field",
+      "Available Jul\u2013Dec 2026"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Modesto-Winemaking-&-Spirits-Distillation-Internship-2026-July-December-CA-95354/1323622300/",
+    "tags": [
+      "winemaking",
+      "spirits",
+      "food-science",
+      "chemistry"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "59",
+    "title": "Chemistry Research and Applications Internship 2026",
+    "org": "E. & J. Gallo Winery",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time",
+    "duration": "Summer 2026",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Conduct chemistry research and applications work at Gallo's Modesto facility. Work alongside research scientists on analytical chemistry projects related to wine and spirits production.",
+    "requirements": [
+      "Pursuing degree in Chemistry, Biochemistry, or related field",
+      "Strong laboratory skills",
+      "Junior or Senior standing"
+    ],
+    "applyUrl": "https://careers.gallo.com/job/Modesto-Chemistry-Research-and-Applications-Internship-2026-CA-95354/1323621300/",
+    "tags": [
+      "chemistry",
+      "research",
+      "laboratory",
+      "science"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "60",
+    "title": "Finance Intern \u2014 Modesto",
+    "org": "G3 Enterprises",
+    "city": "Modesto",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time",
+    "duration": "3 months",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Support Finance and Sales Operations teams at G3 Enterprises. Work on analytics, reporting, and strategic recommendations while gaining hands-on experience in packaging and logistics industry finance.",
+    "requirements": [
+      "Currently pursuing degree in Finance, Accounting, or Business",
+      "Proficiency in Excel",
+      "U.S. work authorization"
+    ],
+    "applyUrl": "https://www.milwaukeejobs.com/job/detail/85060808/Intern-Finance",
+    "tags": [
+      "finance",
+      "accounting",
+      "business"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "61",
+    "title": "Finance Intern III",
+    "org": "Joseph Gallo Farms",
+    "city": "Atwater",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Full-time",
+    "duration": "~3 months (Summer)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Work alongside accounting and operations personnel on capital project improvements. Create financial models, cash flow analyses, and present findings to the executive committee.",
+    "requirements": [
+      "Pursuing degree in Accounting, Finance, or Business Analytics",
+      "Proficiency in Excel and financial software",
+      "Strong analytical skills"
+    ],
+    "applyUrl": "https://josephfarms.com/careers/",
+    "tags": [
+      "finance",
+      "accounting",
+      "agriculture",
+      "dairy"
+    ],
+    "dateAdded": "2026-03-12",
+    "active": true
+  },
+  {
+    "id": "62",
+    "title": "Seasonal Internships (Marketing, Stadium Ops, Community)",
+    "org": "Stockton Ports Baseball",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 16,
+    "ageMax": 25,
+    "pay": null,
+    "hours": "Part-time / Game days",
+    "duration": "Baseball season (Apr\u2013Sep)",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Seasonal internship roles with the Stockton Ports minor league baseball team. Positions include Marketing & Community Assistant, Stadium Operations Assistant, and Fan Experience roles during the 2026 season.",
+    "requirements": [
+      "Interest in sports management or marketing",
+      "Available for game days and events",
+      "Strong communication skills"
+    ],
+    "applyUrl": "https://www.teamworkonline.com/baseball-jobs/californialeague/stockton-ports",
+    "tags": [
+      "sports",
+      "marketing",
+      "events",
+      "community"
+    ],
+    "dateAdded": "2026-03-12",
     "active": true
   }
 ]

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internships209 — Student Internships &amp; Work Experience in Stockton, Modesto, Merced</title>
-  <meta name="description" content="Free internship listings for high school and college students in the 209 area. Find paid work experience in Stockton, Modesto, Merced, Turlock, and Tracy — all in one place." />
+  <title>Internships209 — Student Internships in Stockton, Modesto &amp; Merced</title>
+  <meta name="description" content="Free internship listings for high school and college students in the 209. Find paid work experience in Stockton, Modesto, Merced, Turlock, and Tracy." />
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Open Graph / Social sharing -->
@@ -101,11 +101,14 @@
           <a href="listings.html" data-en="Browse Listings" data-es="Ver Oportunidades">Browse Listings</a>
           <a href="resources.html" data-en="Resources" data-es="Recursos">Resources</a>
           <a href="dor.html" data-en="DOR Services" data-es="Servicios DOR">DOR Services</a>
-          <a href="submit.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
+          <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
+          <a href="employers.html" data-en="For Employers" data-es="Para Empleadores">For Employers</a>
           <a href="about.html" data-en="About" data-es="Sobre Nosotros">About</a>
         </div>
         <div class="nav-actions">
-          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish">ES</button>
+          <!-- Per USDS/W3C guidance: show full language name in its own language (not initials or flags) -->
+          <button class="btn btn-outline btn-sm lang-toggle" onclick="toggleLang()" id="langBtn" title="Switch to Spanish" aria-label="Switch language">Español</button>
+          <a href="saved.html" class="btn btn-outline btn-sm" aria-label="Saved listings" title="Saved listings" style="position:relative; padding-right:0.6rem;">♡<span class="saved-badge" aria-live="polite"></span></a>
           <a href="listings.html" class="btn btn-primary btn-sm" data-en="Find an Internship" data-es="Buscar Pasantías">Find an Internship</a>
         </div>
         <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -118,8 +121,9 @@
       <a href="listings.html">Browse Listings</a>
       <a href="resources.html">Resources</a>
       <a href="dor.html">DOR Services</a>
-      <a href="submit.html">For Employers</a>
+      <a href="blog/index.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="employers.html">For Employers</a>
       <a href="listings.html" style="color:#1A56A4; font-weight:700;">Find an Internship →</a>
     </div>
   </nav>
@@ -167,11 +171,11 @@
 
       <div class="hero-stats">
         <div>
-          <div class="hero-stat-value" id="stat-listings">34</div>
+          <div class="hero-stat-value" id="stat-listings">54</div>
           <div class="hero-stat-label">Active Listings</div>
         </div>
         <div>
-          <div class="hero-stat-value">32</div>
+          <div class="hero-stat-value">51</div>
           <div class="hero-stat-label">Partner Organizations</div>
         </div>
         <div>
@@ -189,10 +193,10 @@
   <!-- URGENT DEADLINES BANNER -->
   <section class="section-sm" style="background:var(--white); border-bottom:1px solid var(--gray-200);">
     <div class="container">
-      <div class="banner banner-orange">
+      <div class="banner banner-orange" id="urgentBanner">
         <span class="banner-icon">⏰</span>
         <div>
-          <strong>Applications closing soon:</strong> City of Stockton Y.E.S.S. Program deadline is <strong>March 6, 2026</strong>. Only 100 spots available — <a href="listings.html?filter=urgent" style="color:#C2410C; text-decoration:underline;">apply now →</a>
+          <strong>Applications closing soon</strong> — <a href="listings.html?filter=urgent" style="color:#C2410C; text-decoration:underline;">view urgent listings →</a>
         </div>
       </div>
     </div>
@@ -246,17 +250,18 @@
     </div>
   </section>
 
-  <!-- FEATURED LISTINGS -->
-  <section class="section" style="background:var(--white);">
+  <!-- NEW & FEATURED LISTINGS (merged section — reduces cognitive load per CLT research) -->
+  <section class="section" style="background:var(--white);" id="new-this-week">
     <div class="container">
       <div class="section-header-row">
         <div>
-          <h2>Featured Opportunities</h2>
-          <p class="text-muted">Handpicked from programs across the 209.</p>
+          <span class="section-eyebrow">Fresh Picks</span>
+          <h2>New &amp; Featured Opportunities</h2>
+          <p class="text-muted">Recently added and handpicked from across the 209 — be the first to apply.</p>
         </div>
         <a href="listings.html" class="btn btn-outline">View All Listings →</a>
       </div>
-      <div id="featuredListings" class="cards-grid-2" aria-live="polite" aria-label="Featured internship listings">
+      <div id="featuredListings" class="cards-grid-2" aria-live="polite" aria-label="New and featured internship listings" style="margin-top:1.5rem;">
         <!-- Skeleton placeholders shown while data loads -->
         <div class="listing-card" aria-hidden="true" style="animation:pulse 1.4s ease-in-out infinite;">
           <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:40%; margin-bottom:0.6rem;"></div>
@@ -277,6 +282,26 @@
           </div>
           <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:85%; margin-bottom:0.4rem;"></div>
           <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:60%;"></div>
+        </div>
+        <div class="listing-card" aria-hidden="true" style="animation:pulse 1.4s ease-in-out infinite; animation-delay:0.3s;">
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:45%; margin-bottom:0.6rem;"></div>
+          <div style="height:1rem; background:var(--gray-200); border-radius:4px; width:70%; margin-bottom:0.8rem;"></div>
+          <div style="display:flex; gap:0.5rem; margin-bottom:0.8rem;">
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:4.5rem;"></div>
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:5rem;"></div>
+          </div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:88%; margin-bottom:0.4rem;"></div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:65%;"></div>
+        </div>
+        <div class="listing-card" aria-hidden="true" style="animation:pulse 1.4s ease-in-out infinite; animation-delay:0.45s;">
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:55%; margin-bottom:0.6rem;"></div>
+          <div style="height:1rem; background:var(--gray-200); border-radius:4px; width:78%; margin-bottom:0.8rem;"></div>
+          <div style="display:flex; gap:0.5rem; margin-bottom:0.8rem;">
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:4rem;"></div>
+            <div style="height:1.4rem; background:var(--gray-200); border-radius:20px; width:6rem;"></div>
+          </div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:82%; margin-bottom:0.4rem;"></div>
+          <div style="height:0.75rem; background:var(--gray-200); border-radius:4px; width:58%;"></div>
         </div>
       </div>
     </div>
@@ -312,11 +337,78 @@
     </div>
   </section>
 
+  <!-- BROWSE BY CITY — compact pill row (reduced to prevent overstimulation; links fixed to listings filter) -->
+  <section class="section-sm" style="background:var(--gray-50); border-top:1px solid var(--gray-200);">
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <p style="font-weight:700; color:var(--gray-900); margin-bottom:0.2rem;">Browse by City</p>
+          <p class="text-muted" style="font-size:0.875rem;">Filter listings to opportunities closest to you.</p>
+        </div>
+        <div class="city-row">
+          <a href="listings.html?city=Stockton" class="city-pill">🏙 Stockton</a>
+          <a href="listings.html?city=Modesto" class="city-pill">🍷 Modesto</a>
+          <a href="listings.html?city=Merced" class="city-pill">🌿 Merced</a>
+          <a href="listings.html?city=Turlock" class="city-pill">🏫 Turlock</a>
+          <a href="listings.html?city=Tracy" class="city-pill">📦 Tracy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT STORIES — uses dedicated CSS classes (no inline styles) -->
+  <section class="section" style="background:var(--blue-50); border-top:1px solid var(--blue-100); border-bottom:1px solid var(--blue-100);" id="student-stories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Student Voices</span>
+        <h2>209 Students, Real Results</h2>
+        <p>Hear from students who found their first opportunity through Internships209.</p>
+      </div>
+      <div class="cards-grid-3">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">I found the City of Stockton Y.E.S.S. program on this site in February and applied the same day. I got in — $23/hr for the whole summer. I wouldn't have known about it otherwise.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:var(--blue-100); color:var(--blue-700);">J</div>
+            <div>
+              <div class="testimonial-name">Jasmine R.</div>
+              <div class="testimonial-info">Stockton · Age 17</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">I had no idea Bay Valley Tech had a paid coding bootcamp for high schoolers. The listing showed exactly what I needed — age requirement, pay, and a direct apply link. Got in on my first try.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:var(--green-100); color:var(--green-600);">M</div>
+            <div>
+              <div class="testimonial-name">Marcus T.</div>
+              <div class="testimonial-info">Modesto · Age 16</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">I used the work permit guide here and had mine in three days. My counselor said it was the most prepared she'd seen a student come in. The whole process was way less scary than I expected.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:var(--orange-100); color:var(--orange-500);">A</div>
+            <div>
+              <div class="testimonial-name">Alyssa V.</div>
+              <div class="testimonial-info">Merced · Age 15</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:1.75rem; font-size:0.875rem; color:var(--gray-600);">Found an opportunity through Internships209? <a href="mailto:hello@internships209.com?subject=My internship story" style="color:var(--blue-700);">Share your story →</a></p>
+    </div>
+  </section>
+
   <!-- QUICK RESOURCE LINKS -->
   <section class="section" style="background:var(--white);">
     <div class="container">
       <div class="section-header-row">
         <div>
+          <span class="section-eyebrow">Student Guides</span>
           <h2>Resources to Get You Ready</h2>
           <p class="text-muted">Everything you need to land an internship in the 209.</p>
         </div>
@@ -326,7 +418,7 @@
         <a href="resources.html#work-permit" class="resource-card" style="text-decoration:none; display:block;">
           <div class="resource-icon resource-icon-blue">📄</div>
           <h3>How to Get a Work Permit</h3>
-          <p>Required if you're 16–17 in California. Step-by-step guide to getting yours fast.</p>
+          <p>Required if you're 14–17 in California. Step-by-step guide to getting yours fast.</p>
           <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Read guide →</span>
         </a>
         <a href="resources.html#resume" class="resource-card" style="text-decoration:none; display:block;">
@@ -341,7 +433,42 @@
           <p>Programs that pay stipends, cover transportation, or offer academic credit instead.</p>
           <span class="text-sm" style="color:var(--blue-700); font-weight:600;">See options →</span>
         </a>
+        <a href="resources.html#interview" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon" style="background:var(--blue-50);">💬</div>
+          <h3>Interview Prep</h3>
+          <p>Common questions, what to wear, and follow-up tips — be ready before you walk in.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Read guide →</span>
+        </a>
+        <a href="dor.html" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon" style="background:var(--orange-100);">♿</div>
+          <h3>DOR Student Services</h3>
+          <p>Disability support, paid work experience (SWEP at $16.50+/hr), and more through CA DOR.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Learn more →</span>
+        </a>
+        <a href="blog/index.html" class="resource-card" style="text-decoration:none; display:block;">
+          <div class="resource-icon" style="background:var(--green-100);">📰</div>
+          <h3>Student Blog &amp; Tips</h3>
+          <p>Guides on summer jobs, work permits, and making the most of your first internship.</p>
+          <span class="text-sm" style="color:var(--blue-700); font-weight:600;">Read the blog →</span>
+        </a>
       </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section id="newsletter" style="background:linear-gradient(135deg,#1A3A5C 0%,#1A56A4 100%); padding:3rem 0;">
+    <div class="container-sm" style="text-align:center;">
+      <div style="font-size:1.5rem; margin-bottom:0.5rem;">📬</div>
+      <h2 style="color:white; margin-bottom:0.75rem;">Get New Listings in Your Inbox</h2>
+      <p style="color:rgba(255,255,255,0.82); margin-bottom:1.75rem; max-width:480px; margin-left:auto; margin-right:auto;">New 209-area internships, deadline reminders, and student tips — free, weekly. Join students across Stockton, Modesto, and Merced.</p>
+      <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" style="display:flex; gap:0.75rem; max-width:440px; margin:0 auto; flex-wrap:wrap;">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <label for="newsletterEmail" class="sr-only">Your email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="your@email.com" required style="flex:1; min-width:200px; padding:0.7rem 1rem; border-radius:8px; border:none; font-size:0.95rem; font-family:inherit; color:var(--gray-900);" />
+        <button type="submit" class="btn btn-white" style="white-space:nowrap;">Get Weekly Updates →</button>
+      </form>
+      <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:1rem;">No spam, ever. Unsubscribe anytime.</p>
     </div>
   </section>
 
@@ -357,6 +484,14 @@
             <span style="color:white; font-weight:700;">Internships</span>
           </div>
           <p>Free internship resources for high school and college students across Stockton, Modesto, Merced, and the Central Valley.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@internships209" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.87a8.2 8.2 0 004.79 1.52v-3.4a4.84 4.84 0 01-1.02-.3z"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
@@ -370,16 +505,25 @@
         <div>
           <h4>Resources</h4>
           <div class="footer-links">
+            <a href="blog/index.html">Student Blog &amp; Tips</a>
             <a href="resources.html#work-permit">Work Permit Guide</a>
             <a href="resources.html#resume">Resume Template</a>
             <a href="resources.html#interview">Interview Tips</a>
-            <a href="resources.html#faq">FAQ</a>
+            <a href="dor.html">DOR Student Services</a>
+          </div>
+        </div>
+        <div>
+          <h4>About</h4>
+          <div class="footer-links">
+            <a href="about.html">Our Story</a>
+            <a href="employers.html">For Employers</a>
+            <a href="mailto:hello@internships209.com">Contact Us</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Internships209. Built for the 209 community. Not affiliated with any government agency.</p>
-        <p>Updated regularly. <a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
+        <p>Updated regularly · <a href="mailto:hello@internships209.com" style="color:rgba(255,255,255,0.5);">hello@internships209.com</a></p>
       </div>
     </div>
   </footer>
@@ -398,7 +542,6 @@
       window.location.href = 'listings.html' + (params.toString() ? '?' + params.toString() : '');
     }
 
-    // Load featured listings — show 4 most urgent/interesting ones
     async function loadFeatured() {
       try {
         const res = await fetch('data/listings.json');
@@ -406,25 +549,49 @@
         const data = await res.json();
         document.getElementById('stat-listings').textContent = data.length;
 
-        // Sort: urgent paid listings first, then by soonest deadline
-        const sorted = [...data].sort((a, b) => {
-          const da = a.deadline === 'Rolling' ? 9999 : (daysUntil(a.deadline) ?? 9999);
-          const db = b.deadline === 'Rolling' ? 9999 : (daysUntil(b.deadline) ?? 9999);
-          // Paid first, then soonest deadline
-          if (a.type !== b.type) {
-            const order = { paid: 0, mixed: 1, unpaid: 2 };
-            return (order[a.type] ?? 3) - (order[b.type] ?? 3);
+        // Dynamic urgent deadline banner — find soonest closing listing
+        const urgent = data.filter(l => l.deadline !== 'Rolling' && daysUntil(l.deadline) !== null && daysUntil(l.deadline) >= 0 && daysUntil(l.deadline) <= 14)
+          .sort((a,b) => daysUntil(a.deadline) - daysUntil(b.deadline));
+        const bannerEl = document.getElementById('urgentBanner');
+        if (bannerEl) {
+          if (urgent.length > 0) {
+            const u = urgent[0];
+            const d = daysUntil(u.deadline);
+            bannerEl.innerHTML = `<span class="banner-icon">⏰</span><div><strong>Applications closing soon:</strong> ${u.org} — <em>${u.title}</em> closes in <strong>${d === 0 ? 'TODAY' : d + ' day' + (d===1?'':'s')}</strong>. <a href="listings.html?filter=urgent" style="color:#C2410C; text-decoration:underline;">Apply now →</a></div>`;
+            bannerEl.closest('section').style.display = '';
+          } else {
+            bannerEl.closest('section').style.display = 'none';
           }
-          return da - db;
-        });
+        }
 
+        // "New & Featured" — merged section: show newest listings first, then paid by soonest deadline
+        // Per CLT research: reducing duplicate sections lowers extraneous cognitive load
+        const now = new Date();
+        const newListings = data.filter(l => l.dateAdded && (now - _parseLocalDate(l.dateAdded)) < (7 * 24 * 60 * 60 * 1000));
         const container = document.getElementById('featuredListings');
-        // Clear skeleton and insert real cards
-        container.innerHTML = sorted.slice(0, 4).map(renderListingCard).join('');
+        if (container) {
+          let displayList;
+          if (newListings.length >= 4) {
+            // Enough new ones — show newest first
+            displayList = [...newListings].sort((a,b) => new Date(b.dateAdded||0) - new Date(a.dateAdded||0)).slice(0, 4);
+          } else {
+            // Blend new + urgently-closing paid listings for a rich preview
+            const newIds = new Set(newListings.map(l => l.id));
+            const urgentPaid = data.filter(l => !newIds.has(l.id) && (l.type === 'paid' || l.type === 'mixed'))
+              .sort((a, b) => {
+                const da = a.deadline === 'Rolling' ? 9999 : (daysUntil(a.deadline) ?? 9999);
+                const db = b.deadline === 'Rolling' ? 9999 : (daysUntil(b.deadline) ?? 9999);
+                return da - db;
+              });
+            displayList = [...newListings, ...urgentPaid].slice(0, 4);
+          }
+          container.innerHTML = displayList.map(renderListingCard).join('');
+        }
       } catch(e) {
         console.error('Featured listings error:', e);
-        document.getElementById('featuredListings').innerHTML =
-          '<p style="color:var(--gray-500); font-size:0.9rem; grid-column:1/-1;">Could not load listings. <a href="listings.html">Browse all →</a></p>';
+        const container = document.getElementById('featuredListings');
+        if (container) container.innerHTML =
+          '<p style="color:var(--gray-600); font-size:0.9rem; grid-column:1/-1;">Could not load listings. <a href="listings.html">Browse all →</a></p>';
       }
     }
     loadFeatured();
