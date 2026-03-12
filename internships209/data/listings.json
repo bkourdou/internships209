@@ -1723,66 +1723,6 @@
     "active": true
   },
   {
-    "id": "58",
-    "title": "Winemaking & Spirits Distillation Internship 2026",
-    "org": "E. & J. Gallo Winery",
-    "city": "Modesto",
-    "type": "paid",
-    "category": "private",
-    "ageMin": 18,
-    "ageMax": 25,
-    "pay": null,
-    "hours": "Full-time",
-    "duration": "6 months (Jul\u2013Dec 2026)",
-    "remote": false,
-    "deadline": "2026-03-31",
-    "description": "Assist with production winemaking at commercial scale or spirits distillation (brandy, whiskey, rum, vodka) at Gallo facilities. Three tracks available: Commercial Winemaking, Research Winemaking, and Spirits Distillation.",
-    "requirements": [
-      "Junior or Senior standing or graduate student",
-      "Pursuing degree in Enology, Food Science, Chemistry, or related field",
-      "Available Jul\u2013Dec 2026"
-    ],
-    "applyUrl": "https://careers.gallo.com/job/Modesto-Winemaking-&-Spirits-Distillation-Internship-2026-July-December-CA-95354/1323622300/",
-    "tags": [
-      "winemaking",
-      "spirits",
-      "food-science",
-      "chemistry"
-    ],
-    "dateAdded": "2026-03-12",
-    "active": true
-  },
-  {
-    "id": "59",
-    "title": "Chemistry Research and Applications Internship 2026",
-    "org": "E. & J. Gallo Winery",
-    "city": "Modesto",
-    "type": "paid",
-    "category": "private",
-    "ageMin": 18,
-    "ageMax": 25,
-    "pay": null,
-    "hours": "Full-time",
-    "duration": "Summer 2026",
-    "remote": false,
-    "deadline": "Rolling",
-    "description": "Conduct chemistry research and applications work at Gallo's Modesto facility. Work alongside research scientists on analytical chemistry projects related to wine and spirits production.",
-    "requirements": [
-      "Pursuing degree in Chemistry, Biochemistry, or related field",
-      "Strong laboratory skills",
-      "Junior or Senior standing"
-    ],
-    "applyUrl": "https://careers.gallo.com/job/Modesto-Chemistry-Research-and-Applications-Internship-2026-CA-95354/1323621300/",
-    "tags": [
-      "chemistry",
-      "research",
-      "laboratory",
-      "science"
-    ],
-    "dateAdded": "2026-03-12",
-    "active": true
-  },
-  {
     "id": "60",
     "title": "Finance Intern \u2014 Modesto",
     "org": "G3 Enterprises",
@@ -1870,5 +1810,251 @@
     ],
     "dateAdded": "2026-03-12",
     "active": true
+  },
+  {
+    "id": "63",
+    "title": "Teen Intern Program",
+    "org": "Boys & Girls Club of Stockton",
+    "city": "Stockton",
+    "type": "unpaid",
+    "category": "nonprofit",
+    "ageMin": 14,
+    "ageMax": 18,
+    "pay": "Volunteer (unpaid)",
+    "hours": "Flexible",
+    "duration": "Year-round",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Gain hands-on workforce experience at a Boys & Girls Club site in Stockton. Interns build real skills while mentoring younger youth, assisting program staff, and developing a professional portfolio including resume, training certificates, and tracked volunteer hours.",
+    "requirements": [
+      "Ages 14\u201318",
+      "Current Boys & Girls Club member preferred",
+      "Commitment to scheduled hours"
+    ],
+    "applyUrl": "https://www.bgcsu.org/programs/teen-intern-program/",
+    "tags": [
+      "year-round",
+      "nonprofit",
+      "volunteer",
+      "high-school",
+      "workforce-readiness"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "64",
+    "title": "YouthBuild Construction Training Program",
+    "org": "San Joaquin Building Futures Academy",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "nonprofit",
+    "ageMin": 18,
+    "ageMax": 24,
+    "pay": "Stipend + training wages (varies)",
+    "hours": "Full-time",
+    "duration": "Year-round",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Earn real construction certifications while working toward your high school diploma or equivalency. Participants work on real building projects in San Joaquin County, earn industry credentials, and receive wrap-around support including case management and job placement assistance.",
+    "requirements": [
+      "Ages 18\u201324",
+      "Not currently enrolled in traditional school",
+      "San Joaquin County resident preferred"
+    ],
+    "applyUrl": "https://www.sjcoe.org/schools/bfa-youthbuild",
+    "tags": [
+      "year-round",
+      "paid",
+      "nonprofit",
+      "construction",
+      "trades",
+      "diploma"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "65",
+    "title": "PG&E Summer Internship Program",
+    "org": "Pacific Gas & Electric (PG&E)",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "private",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Competitive (varies by role)",
+    "hours": "Full-time (40 hrs/week)",
+    "duration": "10\u201312 weeks (Summer)",
+    "remote": false,
+    "deadline": "Rolling \u2014 apply early",
+    "description": "10\u201312 week paid summer internship for college students returning to school in fall. Roles span engineering (electrical, civil, mechanical, environmental), IT, finance, accounting, HR, and operations \u2014 with positions across Northern California including Central Valley service areas.",
+    "requirements": [
+      "Currently enrolled in bachelor's or master's program",
+      "Returning to school in the fall",
+      "Must apply at least 3\u20134 months before summer start"
+    ],
+    "applyUrl": "https://careers.pge.com/en/jobs/?categories=Intern%2FStudent&locations=California",
+    "tags": [
+      "summer",
+      "paid",
+      "private",
+      "engineering",
+      "college",
+      "energy"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "66",
+    "title": "Kaiser Permanente High School Summer Internship",
+    "org": "Kaiser Permanente",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "healthcare",
+    "ageMin": 14,
+    "ageMax": 18,
+    "pay": "Paid (rate varies)",
+    "hours": "Up to 20 hrs/week",
+    "duration": "6\u20138 weeks (Summer)",
+    "remote": false,
+    "deadline": "Spring \u2014 check site for dates",
+    "description": "Paid summer internship for high school students exploring healthcare careers. Work alongside staff in administrative and clinical support roles at Kaiser Permanente medical centers across Northern California, including the Central Valley region. Builds healthcare career awareness and professional skills.",
+    "requirements": [
+      "High school student ages 14\u201318",
+      "Northern California resident",
+      "Application via KP careers portal in spring"
+    ],
+    "applyUrl": "https://community.kp.org/about/program/summer-youth-employment-program",
+    "tags": [
+      "summer",
+      "paid",
+      "healthcare",
+      "high-school",
+      "medical"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "67",
+    "title": "Adventist Health Internship & Work Experience",
+    "org": "Adventist Health",
+    "city": "Modesto",
+    "type": "unpaid",
+    "category": "healthcare",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Unpaid / academic credit",
+    "hours": "Varies by program",
+    "duration": "Semester-based",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "Clinical and administrative work experience opportunities at Adventist Health Modesto, one of the Central Valley's largest healthcare systems. Roles available in nursing support, health information management, and administrative departments for students completing healthcare programs.",
+    "requirements": [
+      "Enrolled in healthcare or related degree program",
+      "Academic credit arrangement through school preferred",
+      "Background check required"
+    ],
+    "applyUrl": "https://www.adventisthealth.org/careers/",
+    "tags": [
+      "semester",
+      "unpaid",
+      "healthcare",
+      "college",
+      "medical",
+      "modesto"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "68",
+    "title": "Stockton Unified School District Student Intern",
+    "org": "Stockton Unified School District (SUSD)",
+    "city": "Stockton",
+    "type": "paid",
+    "category": "education",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Varies by assignment",
+    "hours": "Part-time",
+    "duration": "Semester or year-round",
+    "remote": false,
+    "deadline": "Rolling \u2014 check SUSD HR portal",
+    "description": "SUSD periodically hires student interns and student workers across departments including instruction, special education, IT, and administrative services. College students pursuing education, social work, or public administration degrees gain direct experience within one of the largest school districts in the Central Valley.",
+    "requirements": [
+      "Enrolled in college or university",
+      "Background check and fingerprinting required",
+      "TB test clearance"
+    ],
+    "applyUrl": "https://www.stocktonusd.net/Page/1",
+    "tags": [
+      "year-round",
+      "paid",
+      "education",
+      "college",
+      "teaching"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "69",
+    "title": "United Way of San Joaquin \u2014 AmeriCorps & Internship",
+    "org": "United Way of San Joaquin",
+    "city": "Stockton",
+    "type": "stipend",
+    "category": "nonprofit",
+    "ageMin": 16,
+    "ageMax": 26,
+    "pay": "Stipend (AmeriCorps members); unpaid (general interns)",
+    "hours": "Varies (15\u201340 hrs/week)",
+    "duration": "Year-round",
+    "remote": false,
+    "deadline": "Rolling",
+    "description": "United Way of San Joaquin offers internship and AmeriCorps service opportunities for students and young adults who want to make a difference in the community. Work on education, financial stability, and health initiatives serving the broader Stockton region. College credit available.",
+    "requirements": [
+      "Ages 16\u201326",
+      "Interest in nonprofit sector or community development",
+      "Some roles require college enrollment"
+    ],
+    "applyUrl": "https://www.uwsanjoaquin.org/about/work-with-us/",
+    "tags": [
+      "year-round",
+      "stipend",
+      "nonprofit",
+      "americorps",
+      "community",
+      "high-school",
+      "college"
+    ],
+    "dateAdded": "2026-03-12"
+  },
+  {
+    "id": "70",
+    "title": "Merced County Human Services Agency \u2014 Student Intern",
+    "org": "Merced County Human Services Agency",
+    "city": "Merced",
+    "type": "paid",
+    "category": "government",
+    "ageMin": 18,
+    "ageMax": 26,
+    "pay": "Varies by classification",
+    "hours": "Part-time (up to 20 hrs/week)",
+    "duration": "Semester or year-round",
+    "remote": false,
+    "deadline": "Rolling \u2014 check Merced County HR",
+    "description": "Student intern positions at Merced County Human Services Agency place college students in social services, child welfare, CalWORKs, and public health programs. Ideal for students studying social work, public health, psychology, or public administration at Merced College or UC Merced.",
+    "requirements": [
+      "Currently enrolled in college",
+      "Background check and fingerprinting required",
+      "TB clearance for some roles"
+    ],
+    "applyUrl": "https://www.co.merced.ca.us/192/Human-Services-Agency",
+    "tags": [
+      "year-round",
+      "paid",
+      "government",
+      "social-work",
+      "college",
+      "merced"
+    ],
+    "dateAdded": "2026-03-12"
   }
 ]
